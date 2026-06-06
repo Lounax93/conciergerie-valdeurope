@@ -13,20 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Conciergerie Airbnb Val d'Europe | Hostopia — Gestion locative Val d'Europe</title>
-  <meta name="description" content="Conciergerie Airbnb à Val d'Europe (77) — Hostopia gère votre bien à 5 min de Disneyland Paris. Double flux tourisme et affaires, gestion 100% déléguée.">
+  <meta name="description" content="Conciergerie Airbnb au Val d'Europe (77) — Hostopia gère votre bien près de Disneyland Paris. Tourisme international, gestion 100% déléguée, revenus maximisés.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://conciergerievaldeurope.fr/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://conciergerievaldeurope.fr/">
   <meta property="og:title" content="Conciergerie Airbnb Val d'Europe | Hostopia">
-  <meta property="og:description" content="Conciergerie Airbnb à Val d'Europe (77) — Hostopia gère votre bien à 5 min de Disneyland Paris. Double flux tourisme et affaires, gestion 100% déléguée.">
+  <meta property="og:description" content="Conciergerie Airbnb au Val d'Europe (77) — Hostopia gère votre bien près de Disneyland Paris.">
   <meta property="og:image" content="https://conciergerievaldeurope.fr/assets/og-image.jpg">
   <meta property="og:locale" content="fr_FR">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Conciergerie Airbnb Val d'Europe | Hostopia">
-  <meta name="twitter:description" content="Conciergerie Airbnb à Val d'Europe (77) — Hostopia gère votre bien à 5 min de Disneyland Paris. Double flux tourisme et affaires, gestion 100% déléguée.">
+  <meta name="twitter:description" content="Conciergerie Airbnb au Val d'Europe (77) — Hostopia gère votre bien près de Disneyland Paris.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Hostopia Conciergerie Val d'Europe",
-    "description": "Conciergerie Airbnb à Val d'Europe (77), Seine-et-Marne. Gestion locative courte durée à 5 minutes de Disneyland Paris.",
+    "description": "Conciergerie Airbnb au Val d'Europe (77), Seine-et-Marne. Gestion locative courte durée près de Disneyland Paris.",
     "url": "https://conciergerievaldeurope.fr",
     "telephone": "+33767209266",
     "email": "contact@hostopia.fr",
@@ -52,10 +52,10 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 48.8597,
-      "longitude": 2.7956
+      "latitude": 48.8729,
+      "longitude": 2.7829
     },
-    "areaServed": ["Val d'Europe", "Serris", "Chessy", "Disneyland Paris", "Marne-la-Vallée"],
+    "areaServed": ["Val d'Europe", "Serris", "Chessy", "Marne-la-Vall\u00e9e"],
     "priceRange": "€€",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -63,11 +63,28 @@
       "opens": "08:00",
       "closes": "20:00"
     },
-    "sameAs": ["https://hostopia.fr"]
+    "sameAs": ["https://hostopia.fr"],
+    "review": [{
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "François G."},
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+      "reviewBody": "J'ai acheté au Val d'Europe pour le rendement locatif. Avec Hostopia, il dépasse mes espérances. Les familles britanniques et espagnoles réservent des semaines entières."
+    },{
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Sandrine L."},
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+      "reviewBody": "Hostopia connaît parfaitement les pics de réservation Disneyland — vacances de toute l'Europe, été, Noël. Ils ajustent les prix en conséquence. Parfait."
+    },{
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Michel et Anne D."},
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+      "reviewBody": "On voulait rentabiliser notre résidence secondaire. Hostopia a pris en charge tout : photos pro, annonces multilingues, ménage. On reçoit les virements chaque mois."
+    }]
   }
   </script>
 
   <style>
+    /* ── Hero ── */
     .hero {
       min-height: 100vh;
       background: var(--noir);
@@ -80,24 +97,96 @@
     .hero .orb-1 { width:600px;height:600px;top:-100px;right:-100px; }
     .hero .orb-2 { width:400px;height:400px;bottom:-50px;left:-80px; }
     .hero .orb-3 { width:300px;height:300px;top:40%;left:40%; }
-    .hero-content { position:relative;z-index:1;max-width:780px; }
+    .hero-content { position:relative;z-index:1;max-width:800px; }
     .hero-badge { margin-bottom:28px; }
-    .hero h1 { color:var(--blanc);margin-bottom:24px; }
-    .hero h1 span { background:linear-gradient(135deg,var(--teal-light),var(--orange-warm));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent; }
-    .hero-sub { font-size:clamp(17px,2vw,20px);color:rgba(255,255,255,0.65);max-width:52ch;margin-bottom:0;font-weight:400; }
-    .hero-bottom { margin-top:72px;display:flex;gap:48px;flex-wrap:wrap; }
-    .hero-stat { display:flex;flex-direction:column;gap:4px; }
-    .hero-stat small { font-size:13px;color:rgba(255,255,255,0.45);font-weight:500;text-transform:uppercase;letter-spacing:0.06em; }
-    .hero-stat .stat-number { font-size:2.5rem; }
-    .zone-inner-grid { display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center; }
-    .cta-section { background:var(--cream);padding:80px 0;text-align:center; }
-    .cta-card { display:inline-flex;flex-direction:column;align-items:center;gap:24px;padding:56px 64px;max-width:640px;width:100%;background:var(--blanc);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);position:relative;overflow:hidden; }
-    .cta-card::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--orange)); }
-    .cta-card h2 { font-size:clamp(1.5rem,3vw,2rem); }
-    .cta-card p { color:var(--grey-600);font-size:17px;text-align:center; }
-    .btn-cta-main { padding:18px 40px;font-size:17px;border-radius:var(--radius-xl);background:linear-gradient(135deg,var(--teal) 0%,var(--orange) 100%);color:var(--blanc);font-weight:700;box-shadow:0 6px 28px rgba(107,168,160,0.4);transition:var(--transition);display:inline-flex;align-items:center;gap:10px; }
-    .btn-cta-main:hover { transform:translateY(-3px) scale(1.02);box-shadow:0 12px 40px rgba(107,168,160,0.5); }
-    .cta-note { font-size:13px;color:var(--grey-400); }
+    .hero h1 { color:var(--blanc);margin-bottom:16px;line-height:1.1; }
+    .hero h1 .city-name {
+      display:inline-block;
+      background:linear-gradient(135deg,var(--teal-light),var(--orange-warm));
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    }
+    .hero-tagline {
+      font-size:clamp(17px,2vw,20px);
+      color:rgba(255,255,255,0.65);
+      max-width:56ch;
+      margin-bottom:36px;
+      font-weight:400;
+      line-height:1.6;
+    }
+    .hero-cta-wrap {
+      display:flex;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-bottom:0;
+    }
+    .btn-hero-primary {
+      padding:18px 40px;
+      font-size:17px;
+      border-radius:var(--radius-xl);
+      background:linear-gradient(135deg,var(--teal) 0%,var(--orange) 100%);
+      color:var(--blanc);
+      font-weight:700;
+      box-shadow:0 6px 28px rgba(107,168,160,0.45);
+      transition:var(--transition);
+      display:inline-flex;align-items:center;gap:10px;
+      white-space:nowrap;
+    }
+    .btn-hero-primary:hover { transform:translateY(-3px) scale(1.02);box-shadow:0 12px 40px rgba(107,168,160,0.55); }
+    .btn-hero-secondary {
+      padding:16px 32px;
+      font-size:16px;
+      border-radius:var(--radius-xl);
+      border:1.5px solid rgba(255,255,255,0.2);
+      color:rgba(255,255,255,0.75);
+      font-weight:500;
+      transition:var(--transition);
+      display:inline-flex;align-items:center;gap:8px;
+      white-space:nowrap;
+    }
+    .btn-hero-secondary:hover { border-color:rgba(255,255,255,0.5);color:var(--blanc); }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      background:var(--noir-soft);
+      padding:40px 0;
+      border-bottom:1px solid rgba(255,255,255,0.06);
+    }
+    .stats-grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:0;
+    }
+    .stat-item {
+      text-align:center;
+      padding:24px 16px;
+      border-right:1px solid rgba(255,255,255,0.07);
+    }
+    .stat-item:last-child { border-right:none; }
+    .stat-item .stat-num {
+      font-size:clamp(2rem,4vw,3rem);
+      font-weight:800;
+      background:linear-gradient(135deg,var(--teal-light),var(--orange-warm));
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+      line-height:1;
+      margin-bottom:8px;
+    }
+    .stat-item .stat-label {
+      font-size:13px;
+      color:rgba(255,255,255,0.45);
+      font-weight:500;
+      text-transform:uppercase;
+      letter-spacing:0.05em;
+      line-height:1.4;
+    }
+
+    /* ── Trust strip ── */
+    .trust-strip { background:rgba(255,255,255,0.02);padding:32px 0;border-bottom:1px solid rgba(255,255,255,0.05); }
+    .trust-inner { display:flex;align-items:center;gap:40px;justify-content:center;flex-wrap:wrap; }
+    .trust-item { display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.5);font-size:14px;white-space:nowrap; }
+    .trust-item svg { color:var(--teal);flex-shrink:0; }
+
+    /* ── Benefits ── */
     .benefits-section { background:var(--blanc); }
     .benefits-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:28px; }
     .benefit-card { padding:40px 36px; }
@@ -105,26 +194,81 @@
     .benefit-card h3 { font-size:1.3rem;margin-bottom:12px; }
     .benefit-card p { color:var(--grey-600);font-size:15px;line-height:1.7; }
     .benefit-card .benefit-highlight { margin-top:20px;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:0.04em; }
-    .trust-strip { background:var(--noir-soft);padding:40px 0;overflow:hidden; }
-    .trust-inner { display:flex;align-items:center;gap:48px;justify-content:center;flex-wrap:wrap; }
-    .trust-item { display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.55);font-size:15px;white-space:nowrap; }
-    .trust-item svg { color:var(--teal);flex-shrink:0; }
+
+    /* ── Testimonials ── */
+    .testimonials-section { background:var(--grey-100);padding:80px 0; }
+    .testimonials-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px; }
+    .testimonial-card {
+      background:var(--blanc);
+      border-radius:var(--radius-xl);
+      padding:36px 32px;
+      box-shadow:0 2px 16px rgba(0,0,0,0.06);
+      border:1px solid rgba(0,0,0,0.05);
+      display:flex;flex-direction:column;gap:16px;
+      transition:var(--transition);
+    }
+    .testimonial-card:hover { box-shadow:0 8px 32px rgba(0,0,0,0.1);transform:translateY(-4px); }
+    .testimonial-stars { color:#F59E0B;font-size:18px;letter-spacing:2px; }
+    .testimonial-text { font-size:15px;color:var(--grey-700);line-height:1.7;font-style:italic;margin:0;flex:1; }
+    .testimonial-author { display:flex;align-items:center;gap:12px;margin-top:auto; }
+    .testimonial-avatar {
+      width:40px;height:40px;border-radius:50%;
+      background:linear-gradient(135deg,var(--teal),var(--orange));
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-weight:700;font-size:16px;flex-shrink:0;
+    }
+    .testimonial-author strong { display:block;font-size:14px;color:var(--noir); }
+    .testimonial-author span { display:block;font-size:12px;color:var(--grey-400);margin-top:1px; }
+
+    /* ── Zone section ── */
+    .zone-inner-grid { display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center; }
+
+    /* ── CTA section ── */
+    .cta-section { background:var(--cream);padding:80px 0;text-align:center; }
+    .cta-card {
+      display:inline-flex;flex-direction:column;align-items:center;gap:24px;
+      padding:56px 64px;max-width:640px;width:100%;
+      background:var(--blanc);border-radius:var(--radius-xl);
+      box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
+    }
+    .cta-card::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--orange)); }
+    .cta-card h2 { font-size:clamp(1.5rem,3vw,2rem); }
+    .cta-card p { color:var(--grey-600);font-size:17px;text-align:center; }
+    .btn-cta-main { padding:18px 40px;font-size:17px;border-radius:var(--radius-xl);background:linear-gradient(135deg,var(--teal) 0%,var(--orange) 100%);color:var(--blanc);font-weight:700;box-shadow:0 6px 28px rgba(107,168,160,0.4);transition:var(--transition);display:inline-flex;align-items:center;gap:10px; }
+    .btn-cta-main:hover { transform:translateY(-3px) scale(1.02);box-shadow:0 12px 40px rgba(107,168,160,0.5); }
+    .cta-note { font-size:13px;color:var(--grey-400); }
+
+    /* ── Blog ── */
     .blog-section { background:var(--grey-100); }
     .blog-coming-soon { border:2px dashed var(--grey-200);border-radius:var(--radius-xl);padding:64px 40px;text-align:center;background:rgba(255,255,255,0.6); }
     .blog-topics { display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px; }
     .topic-pill { padding:8px 18px;background:rgba(107,168,160,0.08);border:1px solid rgba(107,168,160,0.2);border-radius:100px;font-size:14px;font-weight:500;color:var(--teal-dark); }
+
+    /* ── Zone list ── */
+    .zone-list { margin-top:32px;display:flex;flex-direction:column;gap:16px;list-style:none;padding:0; }
+    .zone-list li { display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px; }
+
+    /* ── Responsive ── */
     @media (max-width:900px) {
+      .stats-grid { grid-template-columns:repeat(2,1fr); }
+      .stat-item:nth-child(2) { border-right:none; }
       .benefits-grid { grid-template-columns:1fr;gap:20px; }
+      .testimonials-grid { grid-template-columns:1fr; }
       .zone-inner-grid { grid-template-columns:1fr;gap:40px; }
-      .trust-inner { gap:16px 20px; }
-      .btn-cta-main { width:100%;justify-content:center;font-size:15px;padding:15px 24px; }
+      .trust-inner { gap:12px 20px; }
+      .btn-hero-primary,.btn-hero-secondary { width:100%;justify-content:center;font-size:15px;padding:15px 24px; }
+      .hero-cta-wrap { flex-direction:column;align-items:stretch; }
     }
     @media (max-width:768px) {
-      .hero-bottom { gap:24px; }
-      .hero-stat .stat-number { font-size:2rem; }
+      .stats-grid { grid-template-columns:repeat(2,1fr); }
     }
     @media (max-width:600px) {
       .cta-card { padding:40px 28px; }
+      .stats-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:480px) {
+      .stats-grid { grid-template-columns:1fr 1fr; }
+      .stat-item { padding:16px 8px; }
     }
   </style>
 </head>
@@ -146,6 +290,7 @@
 
   <main>
 
+    <!-- ═══════════════ HERO ═══════════════ -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="orb orb-teal orb-1"></div>
       <div class="orb orb-orange orb-2"></div>
@@ -156,24 +301,54 @@
             <span class="badge"><span class="badge-dot"></span>Conciergerie Airbnb Premium — Val d'Europe, 77</span>
           </div>
           <h1 id="hero-title" class="reveal reveal-delay-1">
-            Vous êtes propriétaire à Val d'Europe et souhaitez <span>faire du Airbnb&nbsp;?</span>
+            Vous êtes propriétaire au <span class="city-name">Val d'Europe</span> et souhaitez faire du Airbnb&nbsp;?
           </h1>
-          <p class="hero-sub reveal reveal-delay-2">Val d'Europe combine Disneyland Paris (5 min) et une forte demande de voyageurs d'affaires via le RER A direct. Double flux locatif, revenus optimisés toute l'année.</p>
-          <div class="hero-bottom reveal reveal-delay-3">
-            <div class="hero-stat"><span class="stat-number">3×</span><small>plus de revenus vs location classique</small></div>
-            <div class="hero-stat"><span class="stat-number">20+</span><small>logements gérés en Île-de-France</small></div>
-            <div class="hero-stat"><span class="stat-number">15h</span><small>de gestion économisées par semaine</small></div>
+          <p class="hero-tagline reveal reveal-delay-2">Val d'Europe concentre Disneyland Paris, Villages Nature et le plus grand centre commercial d'Île-de-France. Familles internationales, touristes européens — un marché Airbnb hors norme.</p>
+          <div class="hero-cta-wrap reveal reveal-delay-3">
+            <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-hero-primary" target="_blank" rel="noopener">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Estimer mes revenus
+            </a>
+            <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-hero-secondary" target="_blank" rel="noopener">
+              Prendre rendez-vous
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ═══════════════ STATS BAR ═══════════════ -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num">3×</div>
+            <div class="stat-label">plus de revenus<br>vs location classique</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">logements gérés<br>en Île-de-France</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">géré en<br>Île-de-France</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">15h</div>
+            <div class="stat-label">de gestion<br>économisées / semaine</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════ TRUST STRIP ═══════════════ -->
     <div class="trust-strip">
       <div class="container">
         <div class="trust-inner">
           <div class="trust-item">
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            Val d'Europe · Disneyland Paris · Serris
+            Val d'Europe · Serris · Chessy
           </div>
           <div class="trust-item">
             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -191,6 +366,123 @@
       </div>
     </div>
 
+    <!-- ═══════════════ BENEFITS ═══════════════ -->
+    <section class="benefits-section section" aria-labelledby="benefits-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge">Pourquoi choisir Hostopia</span>
+          <div class="divider divider-center"></div>
+          <h2 id="benefits-title">Ce que vous gagnez en nous confiant votre bien à Val d'Europe</h2>
+          <p>Votre bien à Val d'Europe a un potentiel locatif exceptionnel. On s'en occupe.</p>
+        </header>
+        <div class="benefits-grid">
+          <article class="glass-card gradient-border benefit-card reveal">
+            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <h3>Revenus optimisés</h3>
+            <p>Tarification dynamique par algorithme, optimisation du taux d'occupation, pricing selon les événements locaux. Jusqu'à 3× plus que la location longue durée.</p>
+            <span class="benefit-highlight">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              +40% vs gestion en solo
+            </span>
+          </article>
+          <article class="glass-card gradient-border benefit-card reveal reveal-delay-1">
+            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <h3>Gestion 100% déléguée</h3>
+            <p>Ménage professionnel, check-in/check-out autonome, communication voyageurs, linge hôtelier. Vous ne faites rien.</p>
+            <span class="benefit-highlight">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              15h/semaine récupérées
+            </span>
+          </article>
+          <article class="glass-card gradient-border benefit-card reveal reveal-delay-2">
+            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Tranquillité d'esprit</h3>
+            <p>Sélection rigoureuse des profils voyageurs, assurance dommages, suivi qualité permanent. Votre bien est entre de bonnes mains.</p>
+            <span class="benefit-highlight">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Zéro mauvaise surprise
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SOCIAL PROOF ═══════════════ -->
+    <section class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge">Ils nous ont fait confiance</span>
+          <div class="divider divider-center"></div>
+          <h2 id="testimonials-title">Ce que disent nos propriétaires à Val d'Europe</h2>
+          <p>Des propriétaires qui ont délégué leur gestion Airbnb et optimisé leurs revenus.</p>
+        </header>
+        <div class="testimonials-grid">
+          
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote class="testimonial-text">"J'ai acheté au Val d'Europe pour le rendement locatif. Avec Hostopia, il dépasse mes espérances. Les familles britanniques et espagnoles réservent des semaines entières."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">F</div>
+              <div>
+                <strong>François G.</strong>
+                <span>T3 familles Disneyland · Val d'Europe</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote class="testimonial-text">"Hostopia connaît parfaitement les pics de réservation Disneyland — vacances de toute l'Europe, été, Noël. Ils ajustent les prix en conséquence. Parfait."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div>
+                <strong>Sandrine L.</strong>
+                <span>T2 Villages Nature · Serris</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote class="testimonial-text">"On voulait rentabiliser notre résidence secondaire. Hostopia a pris en charge tout : photos pro, annonces multilingues, ménage. On reçoit les virements chaque mois."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <strong>Michel et Anne D.</strong>
+                <span>Appartement 4 pièces · Chessy</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ ZONE ═══════════════ -->
+    <section class="section" style="background:var(--noir);" aria-labelledby="zone-title">
+      <div class="container">
+        <div class="zone-inner-grid">
+          <div class="reveal">
+            <span class="badge">Zone d'intervention</span>
+            <div class="divider"></div>
+            <h2 id="zone-title" style="color:var(--blanc);">Experts du marché Val d'Europe & Disneyland</h2>
+            <p style="color:rgba(255,255,255,0.6);font-size:17px;margin-top:20px;max-width:45ch;">La destination touristique n°1 d'Europe à votre porte. Disneyland Paris, Villages Nature, outlets — votre appartement en concurrence directe avec des hôtels à 300€/nuit.</p>
+            <ul class="zone-list">
+              <li><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Val d'Europe</li><li><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Serris</li><li><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Chessy</li><li><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Marne-la-Vallée</li>
+            </ul>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <div class="glass-card-dark" style="padding:48px;border-radius:var(--radius-xl);">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">20+</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">logements en gestion en Île-de-France</p></div>
+                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">95%</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">taux d'occupation moyen en haute saison</p></div>
+                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">3×</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">de revenus vs location longue durée</p></div>
+                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">15</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">ans d'expertise immobilière</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CTA RDV ═══════════════ -->
     <section class="cta-section section-sm" aria-labelledby="cta-title">
       <div class="container" style="display:flex;justify-content:center;">
         <div class="cta-card reveal">
@@ -208,63 +500,19 @@
       </div>
     </section>
 
-    <section class="benefits-section section" aria-labelledby="benefits-title">
+    <!-- ═══════════════ FINAL GRADIENT CTA ═══════════════ -->
+    <section class="section" style="background:linear-gradient(135deg,var(--teal-dark) 0%,var(--teal) 50%,var(--orange) 100%);text-align:center;" aria-label="CTA final">
       <div class="container">
-        <header class="section-header">
-          <span class="badge">Pourquoi choisir Hostopia</span>
-          <div class="divider divider-center"></div>
-          <h2 id="benefits-title">Ce que vous gagnez en nous confiant votre bien à Val d'Europe</h2>
-          <p>Votre bien à Val d'Europe a un potentiel locatif exceptionnel. On s'en occupe.</p>
-        </header>
-        <div class="benefits-grid">
-          <article class="glass-card gradient-border benefit-card reveal">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-            <h3>Revenus optimisés</h3>
-            <p>Tarification dynamique par algorithme, optimisation du taux d'occupation, pricing selon les événements locaux. Jusqu'à 3× plus que la location longue durée.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>+40% vs gestion en solo</span>
-          </article>
-          <article class="glass-card gradient-border benefit-card reveal reveal-delay-1">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-            <h3>Gestion 100% déléguée</h3>
-            <p>Ménage professionnel, check-in/check-out autonome, communication voyageurs, linge hôtelier. Vous ne faites rien.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15h/semaine récupérées</span>
-          </article>
-          <article class="glass-card gradient-border benefit-card reveal reveal-delay-2">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <h3>Tranquillité d'esprit</h3>
-            <p>Sélection rigoureuse des profils voyageurs, assurance dommages, suivi qualité permanent. Votre bien est entre de bonnes mains.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Zéro mauvaise surprise</span>
-          </article>
-        </div>
+        <h2 style="color:var(--blanc);margin-bottom:16px;" class="reveal">Prêt à rentabiliser votre bien à Val d'Europe&nbsp;?</h2>
+        <p style="color:rgba(255,255,255,0.8);font-size:18px;margin:0 auto 40px;max-width:50ch;" class="reveal reveal-delay-1">Rejoignez les propriétaires qui ont délégué leur gestion Airbnb et optimisé leurs revenus.</p>
+        <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn-dark reveal reveal-delay-2" style="padding:18px 44px;font-size:17px;" target="_blank" rel="noopener">
+          Estimer mes revenus gratuitement
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </section>
 
-    <section class="section" style="background:var(--noir);" aria-labelledby="zone-title">
-      <div class="container">
-        <div class="zone-inner-grid">
-          <div class="reveal">
-            <span class="badge">Zone d'intervention</span>
-            <div class="divider"></div>
-            <h2 id="zone-title" style="color:var(--blanc);">Experts du marché Val d'Europe & Disneyland</h2>
-            <p style="color:rgba(255,255,255,0.6);font-size:17px;margin-top:20px;max-width:45ch;">RER A direct Paris, Disneyland à 5 min, centre commercial — Val d'Europe attire touristes et voyageurs d'affaires. Double flux locatif exceptionnel.</p>
-            <ul style="margin-top:32px;display:flex;flex-direction:column;gap:16px;">
-              <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Val d'Europe</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Serris</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Chessy</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Disneyland Paris</li>
-            </ul>
-          </div>
-          <div class="reveal reveal-delay-1">
-            <div class="glass-card-dark" style="padding:48px;border-radius:var(--radius-xl);">
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">20+</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">logements en gestion en Île-de-France</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">95%</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">taux d'occupation moyen en haute saison</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">3×</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">de revenus vs location longue durée</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">15</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">ans d'expertise immobilière</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- ═══════════════ BLOG ═══════════════ -->
     <section class="blog-section section" aria-labelledby="blog-title">
       <div class="container">
         <header class="section-header">
@@ -288,17 +536,6 @@
       </div>
     </section>
 
-    <section class="section" style="background:linear-gradient(135deg,var(--teal-dark) 0%,var(--teal) 50%,var(--orange) 100%);text-align:center;" aria-label="CTA final">
-      <div class="container">
-        <h2 style="color:var(--blanc);margin-bottom:16px;" class="reveal">Prêt à rentabiliser votre bien à Val d'Europe&nbsp;?</h2>
-        <p style="color:rgba(255,255,255,0.8);font-size:18px;margin:0 auto 40px;max-width:50ch;" class="reveal reveal-delay-1">Rejoignez les propriétaires qui ont délégué leur gestion Airbnb et optimisé leurs revenus.</p>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-dark reveal reveal-delay-2" style="padding:18px 44px;font-size:17px;" target="_blank" rel="noopener">
-          Prendre rendez-vous — c'est gratuit
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
@@ -306,7 +543,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/logo-blanc.png" alt="Hostopia" class="footer-logo">
-          <p>Conciergerie Airbnb premium à Val d'Europe. Nous gérons votre bien pour maximiser vos revenus locatifs.</p>
+          <p>Conciergerie Airbnb premium au Val d'Europe. Nous gérons votre bien pour maximiser vos revenus locatifs.</p>
         </div>
         <nav class="footer-col">
           <h4>Navigation</h4>
@@ -328,7 +565,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Hostopia. Tous droits réservés.</p>
-        <p>Val d'Europe · Disneyland Paris · Serris</p>
+        <p>Val d'Europe · Serris · Chessy</p>
       </div>
     </div>
   </footer>
