@@ -319,12 +319,28 @@
     .footer-links a:hover{color:rgba(255,255,255,.7);}
     .footer-copy{font-size:.65rem;color:rgba(255,255,255,.14);}
 
+    /* ── RDV SECTION ── */
+    .rdv-sec{background:#fff;padding:88px 0;border-bottom:1px solid var(--border);}
+    .rdv-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+    .rdv-sub{font-size:.92rem;color:var(--muted);line-height:1.8;font-weight:300;margin-bottom:28px;max-width:420px;}
+    .rdv-features{display:flex;flex-direction:column;gap:12px;}
+    .rdv-feat{display:flex;align-items:center;gap:10px;font-size:.82rem;color:var(--navy);font-weight:500;}
+    .rdv-feat-dot{width:8px;height:8px;border-radius:50%;background:var(--turquoise);flex-shrink:0;}
+    .rdv-card{background:var(--glacier);border:1px solid rgba(0,166,166,.18);border-radius:24px;padding:40px 36px;text-align:center;box-shadow:0 8px 40px rgba(0,166,166,.08);}
+    .rdv-card-badge{display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--turquoise);background:rgba(0,166,166,.12);padding:5px 14px;border-radius:999px;margin-bottom:16px;}
+    .rdv-card-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.5rem;font-weight:800;color:var(--navy);margin-bottom:6px;letter-spacing:-.02em;}
+    .rdv-card-duration{font-size:.78rem;color:var(--muted);font-weight:300;margin-bottom:28px;}
+    .btn-rdv{display:block;background:var(--turquoise);color:#fff;text-decoration:none;padding:16px 28px;border-radius:999px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.92rem;font-weight:700;text-align:center;transition:background .25s,transform .2s;margin-bottom:12px;}
+    .btn-rdv:hover{background:var(--turquoise-d);transform:translateY(-2px);}
+    .rdv-card-note{font-size:.68rem;color:var(--muted);font-weight:300;}
+
     /* ── RESPONSIVE ── */
     @media(max-width:1024px){
       .hero-inner{grid-template-columns:1fr;gap:0;padding:60px 40px;}
       .hero-dashboard{display:none;}
       .stats-grid{grid-template-columns:1fr 1fr;gap:16px;padding:0 40px;}
       .sec-wrap{padding:0 40px;}
+      .rdv-inner{grid-template-columns:1fr;gap:40px;padding:0 40px;}
       .benefit-grid{grid-template-columns:1fr;gap:20px;}
       .testi-grid{grid-template-columns:1fr;}
       .zone-inner{grid-template-columns:1fr;gap:40px;padding:0 40px;}
@@ -338,12 +354,17 @@
       .nav-links{display:none;}
       .nav-mobile-cta{display:flex;}
       .hero-inner{padding:60px 20px;}
-      .hero h1{font-size:clamp(1.9rem,7.5vw,3rem);}
-      .hero-tag{max-width:100%;}
+      .hero{min-height:auto;height:auto;padding-top:60px;padding-bottom:60px;}
+      .hero h1{font-size:clamp(1.8rem,7vw,2.8rem);}
+      .hero-tag{max-width:100%;font-size:.9rem;}
       .hero-ctas{flex-direction:column;gap:10px;}
       .btn-navy,.btn-outline-w{text-align:center;padding:14px 20px;}
       .stats-grid{grid-template-columns:1fr 1fr;gap:12px;padding:0 20px;}
       .stats-sec{padding:48px 0;}
+      .rdv-sec{padding:56px 0;}
+      .rdv-inner{gap:32px;padding:0 20px;}
+      .rdv-card{padding:28px 20px;}
+      .rdv-sub{max-width:100%;}
       .trust{padding:16px 20px;}
       .trust-sep{display:none;}
       .trust-inner{gap:12px 24px;}
@@ -354,20 +375,30 @@
       .zone-inner{padding:0 20px;}
       .cta-final{padding:64px 20px;}
       .cta-wrap{gap:36px;}
+      .cta-text h2{font-size:clamp(1.8rem,6vw,2.8rem);}
       footer{padding:40px 20px;}
       .footer-inner{flex-direction:column;align-items:flex-start;gap:20px;}
-      .footer-links{gap:12px 20px;}
+      .footer-links{gap:12px 20px;flex-wrap:wrap;}
       .kpi-num{font-size:2.2rem;}
+      .benefit-card{padding:28px 22px;}
+      .testi-card{padding:24px 20px;}
     }
     @media(max-width:480px){
       nav{padding:0 16px;}
-      .hero-inner{padding:52px 16px;}
-      .stats-grid{padding:0 16px;}
+      .hero-inner{padding:48px 16px;}
+      .hero-badge{font-size:.58rem;}
+      .stats-grid{padding:0 16px;grid-template-columns:1fr 1fr;}
+      .kpi-num{font-size:1.9rem;}
+      .kpi-card{padding:20px 16px;}
       .sec-wrap{padding:0 16px;}
+      .rdv-inner{padding:0 16px;}
       .zone-inner{padding:0 16px;}
       .cta-final{padding:52px 16px;}
+      .cta-actions{gap:10px;}
+      .btn-champagne,.btn-outline-glass{padding:14px 20px;font-size:.84rem;}
       footer{padding:32px 16px;}
-      .kpi-num{font-size:2rem;}
+      .footer-links{flex-wrap:wrap;gap:10px 16px;}
+      .zone-stats{grid-template-columns:1fr 1fr;}
     }
   </style>
 </head>
@@ -428,8 +459,8 @@
         À 30 minutes de Paris, Val d'Europe est le premier hub touristique de Marne-la-Vallée. Disneyland, Villages Nature, outlet — votre bien est au cœur d'un flux touristique permanent.
       </p>
       <div class="hero-ctas reveal d2">
-        <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-navy" target="_blank" rel="noopener">Estimer mes revenus →</a>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-outline-w" target="_blank" rel="noopener">Prendre rendez-vous</a>
+        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-navy" target="_blank" rel="noopener">Prendre rendez-vous →</a>
+        <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-outline-w" target="_blank" rel="noopener">Estimer mes revenus</a>
       </div>
     </div>
 
@@ -518,6 +549,34 @@
       </div>
       <div class="kpi-num">15h</div>
       <div class="kpi-label">Économisées par semaine par propriétaire</div>
+    </div>
+  </div>
+</section>
+
+<!-- RENDEZ-VOUS -->
+<section class="rdv-sec">
+  <div class="sec-wrap">
+    <div class="rdv-inner">
+      <div class="rdv-text reveal">
+        <p class="sec-label">Appel découverte · Gratuit</p>
+        <h2 class="sec-title" style="margin-bottom:16px;">Discutez de votre projet<br>avec un expert Val d'Europe</h2>
+        <p class="rdv-sub">20 minutes pour comprendre votre bien, estimer vos revenus potentiels et définir la meilleure stratégie locative. Sans engagement.</p>
+        <div class="rdv-features">
+          <div class="rdv-feat"><span class="rdv-feat-dot"></span>Estimation personnalisée de vos revenus Airbnb</div>
+          <div class="rdv-feat"><span class="rdv-feat-dot"></span>Analyse du marché Val d'Europe / Marne-la-Vallée</div>
+          <div class="rdv-feat"><span class="rdv-feat-dot"></span>Stratégie locative adaptée à votre type de bien</div>
+          <div class="rdv-feat"><span class="rdv-feat-dot"></span>Réponse sous 2h en semaine · 7j/7</div>
+        </div>
+      </div>
+      <div class="rdv-card reveal d2">
+        <div class="rdv-card-badge">Disponible 7j/7</div>
+        <p class="rdv-card-title">Prendre rendez-vous</p>
+        <p class="rdv-card-duration">20 min · Gratuit · Sans engagement</p>
+        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-rdv" target="_blank" rel="noopener">
+          Réserver mon créneau →
+        </a>
+        <p class="rdv-card-note">Ou appelez-nous sur WhatsApp · Réponse immédiate</p>
+      </div>
     </div>
   </div>
 </section>
@@ -762,13 +821,6 @@
 
 <!-- CTA FINAL -->
 <section class="cta-final">
-  <!-- Floating bg cards -->
-  <div class="cta-bg-cards">
-    <div class="bg-card" style="top:15%;left:5%;animation:floatA 6s ease-in-out infinite;">Familles internationales</div>
-    <div class="bg-card" style="top:25%;right:8%;animation:floatB 7s ease-in-out infinite;animation-delay:-2s;">Pics vacances scolaires</div>
-    <div class="bg-card" style="bottom:20%;left:12%;animation:floatC 5.5s ease-in-out infinite;animation-delay:-1s;">Séjours 5–7 nuits</div>
-    <div class="bg-card" style="bottom:30%;right:6%;animation:floatA 8s ease-in-out infinite;animation-delay:-3s;">Revenus optimisés</div>
-  </div>
   <div class="cta-wrap">
     <div class="cta-text reveal">
       <p class="sec-label" style="color:rgba(0,166,166,.7);margin-bottom:14px;">
@@ -779,8 +831,8 @@
       <p>Obtenez votre estimation personnalisée en 2 minutes — ou discutons directement de votre projet lors d'un appel découverte avec un expert du marché.</p>
     </div>
     <div class="cta-actions reveal d2">
-      <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-champagne" target="_blank" rel="noopener">Estimer mes revenus →</a>
-      <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-outline-glass" target="_blank" rel="noopener">Prendre rendez-vous avec un expert</a>
+      <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-champagne" target="_blank" rel="noopener">Prendre rendez-vous →</a>
+      <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-outline-glass" target="_blank" rel="noopener">Estimer mes revenus</a>
     </div>
   </div>
 </section>
