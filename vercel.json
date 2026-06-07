@@ -10,5 +10,9 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/combien-rapporte-airbnb-val-europe", "destination": "/blog/combien-rapporte-airbnb-val-europe", "permanent": true },
+    { "source": "/saisonnalite-airbnb-val-europe-disneyland", "destination": "/blog/saisonnalite-airbnb-val-europe-disneyland", "permanent": true }
   ]
 }
