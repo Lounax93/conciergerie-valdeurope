@@ -1,628 +1,391 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL60XQ455W"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YL60XQ455W');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Primary -->
-  <title>Qui sommes-nous | Hostopia Conciergerie Airbnb Val d'Europe — 15 ans d'expertise</title>
-  <meta name="description" content="Découvrez l'équipe Hostopia : 15 ans d'expertise immobilière, 20+ logements en gestion en Seine-et-Marne. Votre conciergerie Airbnb de confiance à Val d'Europe et Disneyland Paris.">
-  <meta name="robots" content="index, follow">
+  <title>Qui sommes-nous | Conciergerie Airbnb Val d'Europe — Experts Marne-la-Vallée</title>
+  <meta name="description" content="L'équipe qui maîtrise le marché Val d'Europe. Experts de la gestion locative courte durée à Marne-la-Vallée, Serris, Chessy — votre bien géré comme un actif hôtelier.">
   <link rel="canonical" href="https://conciergerievaldeurope.fr/qui-sommes-nous">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://conciergerievaldeurope.fr/qui-sommes-nous">
-  <meta property="og:title" content="Qui sommes-nous | Hostopia Conciergerie Val d'Europe">
-  <meta property="og:description" content="15 ans d'expertise, 20+ logements en Seine-et-Marne. L'équipe Hostopia se présente.">
-  <meta property="og:image" content="https://conciergerievaldeurope.fr/assets/og-image.jpg">
-  <meta property="og:locale" content="fr_FR">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Qui sommes-nous | Hostopia Conciergerie Val d'Europe">
-  <meta name="twitter:description" content="15 ans d'expertise, 20+ logements en gestion dans le 77.">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/base.css">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "Qui sommes-nous — Hostopia Conciergerie Val d'Europe",
-    "url": "https://conciergerievaldeurope.fr/qui-sommes-nous",
-    "description": "15 ans d'expertise en gestion locative, plus de 20 logements en Seine-et-Marne.",
-    "mainEntity": {
-      "@type": "LocalBusiness",
-      "name": "Hostopia Conciergerie Val d'Europe",
-      "foundingDate": "2010",
-      "areaServed": ["Serris", "Val d'Europe", "Chessy", "Marne-la-Vallée"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Serris",
-        "postalCode": "77700",
-        "addressRegion": "Seine-et-Marne",
-        "addressCountry": "FR"
-      }
-    }
-  }
-  </script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    /* ── Page-specific: Qui sommes-nous ── */
-
-    .page-hero {
-      background: var(--noir);
-      padding: 160px 0 96px;
-      position: relative;
-      overflow: hidden;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;overflow-x:hidden;}
+    body{font-family:'Inter',sans-serif;font-weight:400;color:#102A43;background:#F8FAFC;overflow-x:hidden;}
+    :root{
+      --white:#F8FAFC;--glacier:#EAF3F8;--navy:#102A43;--navy-d:#0A1C2E;
+      --turquoise:#00A6A6;--turquoise-d:#007F7F;--champagne:#D6B36A;--champagne-d:#B8952E;
+      --coral:#FF6B4A;--resort:#5F8D6A;--border:#CBD5E1;--muted:rgba(16,42,67,0.5);
+      --card-shadow:0 20px 60px rgba(16,42,67,0.10);
     }
+    h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em;}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1);}
+    .reveal.visible{opacity:1;transform:none;}
+    .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
+    @keyframes floatA{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
 
-    .page-hero .orb-1 { width: 500px; height: 500px; top: -80px; right: -60px; }
-    .page-hero .orb-2 { width: 350px; height: 350px; bottom: -60px; left: -40px; }
+    /* ── NAV ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:300;padding:0 64px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,250,252,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(16,42,67,0.08);}
+    .nav-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.92rem;color:var(--navy);text-decoration:none;}
+    .nav-logo em{color:var(--turquoise);font-style:normal;}
+    .nav-links{display:flex;gap:40px;list-style:none;align-items:center;}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:color .2s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--turquoise);}
+    .nav-cta{background:var(--navy)!important;color:#fff!important;padding:9px 22px;border-radius:999px;font-size:.8rem!important;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:0!important;text-transform:none!important;transition:background .25s!important;}
+    .nav-cta:hover{background:var(--turquoise)!important;}
+    .nav-mobile-cta{display:none;background:var(--navy);color:#fff;text-decoration:none;padding:8px 16px;border-radius:999px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.78rem;font-weight:700;}
 
-    .page-hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 680px;
+    /* ── WA ── */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;background:#25D366;color:#fff;width:54px;height:54px;border-radius:27px;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:transform .25s,width .3s,padding .3s;overflow:hidden;white-space:nowrap;}
+    .wa-float svg{width:24px;height:24px;flex-shrink:0;}
+    .wa-label{display:none;font-size:.8rem;font-weight:500;margin-left:9px;margin-right:3px;}
+    .wa-float:hover{transform:scale(1.04);width:auto;padding:0 16px 0 13px;}
+    .wa-float:hover .wa-label{display:inline;}
+
+    /* ── PAGE HERO ── */
+    .page-hero{padding:140px 64px 100px;background:linear-gradient(135deg,var(--navy) 0%,#0D3B5E 60%,rgba(0,166,166,.35) 100%);position:relative;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 88%,0 100%);margin-bottom:-48px;}
+    .hero-bg{position:absolute;inset:0;pointer-events:none;}
+    .page-hero-inner{max-width:1360px;margin:0 auto;position:relative;z-index:2;}
+    .page-eyebrow{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(0,166,166,.8);margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+    .page-eyebrow::before{content:'';width:20px;height:2px;background:var(--turquoise);}
+    .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.5vw,4.2rem);color:#fff;line-height:1.06;letter-spacing:-.03em;margin-bottom:18px;max-width:680px;}
+    .page-hero h1 em{color:var(--turquoise);font-style:normal;}
+    .page-hero-sub{font-size:.97rem;color:rgba(255,255,255,.45);line-height:1.8;max-width:480px;font-weight:300;}
+    .hero-turquoise-line{position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--turquoise);opacity:.5;}
+
+    /* ── SECTIONS ── */
+    .sec-wrap{max-width:1360px;margin:0 auto;padding:0 64px;}
+    .sec-label{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--turquoise);margin-bottom:12px;display:flex;align-items:center;gap:12px;}
+    .sec-label::before{content:'';width:20px;height:2px;background:var(--turquoise);}
+    .sec-title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.8rem);color:var(--navy);line-height:1.1;margin-bottom:48px;}
+
+    /* ── HISTOIRE ── */
+    .histoire{background:#fff;padding:100px 0 88px;}
+    .hist-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+    .hist-text p{font-size:.93rem;color:var(--muted);line-height:1.88;margin-bottom:20px;font-weight:300;}
+    .hist-text p strong{color:var(--navy);font-weight:600;}
+    .hist-card{background:var(--glacier);border:1px solid rgba(16,42,67,.07);border-radius:24px;padding:36px;position:relative;overflow:hidden;}
+    .hist-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--turquoise),var(--champagne));}
+    .hist-year{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(3rem,7vw,6rem);font-weight:800;color:var(--turquoise);opacity:.15;line-height:.9;margin-bottom:12px;letter-spacing:-.06em;}
+    .hist-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:10px;}
+    .hist-card p{font-size:.85rem;color:var(--muted);line-height:1.75;font-weight:300;}
+    .hist-tag{display:inline-block;margin-top:18px;font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--turquoise);background:rgba(0,166,166,.1);border:1px solid rgba(0,166,166,.25);padding:6px 14px;border-radius:999px;}
+    /* Hub SVG illustration */
+    .hist-hub-svg{margin-top:20px;width:100%;opacity:.6;}
+
+    /* ── STATS BAND ── */
+    .stats-band{background:var(--navy);padding:52px 0;}
+    .stats-inner{max-width:1360px;margin:0 auto;padding:0 64px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.07);}
+    .sb{background:var(--navy);padding:32px 24px;}
+    .sb-num{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(2.4rem,4vw,3.6rem);color:var(--champagne);display:block;line-height:.9;letter-spacing:-.05em;margin-bottom:10px;}
+    .sb-lbl{font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.38);line-height:1.5;}
+
+    /* ── VALEURS ── */
+    .valeurs{background:linear-gradient(180deg,#F8FAFC 0%,#EAF3F8 100%);padding:96px 0;}
+    .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .val-card{background:#fff;border:1px solid rgba(16,42,67,.08);border-radius:24px;padding:36px 28px;transition:box-shadow .35s,transform .3s;}
+    .val-card:hover{box-shadow:var(--card-shadow);transform:translateY(-5px);}
+    .val-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--champagne-d);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+    .val-num::after{content:'';flex:1;height:1px;background:rgba(16,42,67,.08);}
+    .val-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:10px;}
+    .val-card p{font-size:.85rem;color:var(--muted);line-height:1.8;font-weight:300;}
+
+    /* ── ÉQUIPE ── */
+    .equipe{background:#fff;padding:96px 0;}
+    .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .team-card{background:var(--white);border:1px solid var(--border);border-radius:20px;overflow:hidden;transition:box-shadow .3s,transform .25s;}
+    .team-card:hover{box-shadow:var(--card-shadow);transform:translateY(-4px);}
+    .team-avatar{width:100%;aspect-ratio:1/1;position:relative;overflow:hidden;}
+    .team-info{padding:24px 22px;}
+    .team-info h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:.97rem;font-weight:700;color:var(--navy);margin-bottom:3px;}
+    .team-role{font-size:.67rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--turquoise);margin-bottom:10px;}
+    .team-info p{font-size:.82rem;color:var(--muted);line-height:1.72;font-weight:300;}
+
+    /* ── CTA FINAL ── */
+    .cta-final{background:linear-gradient(135deg,var(--navy),#0D3B5E 50%,var(--turquoise-d));padding:96px 64px;position:relative;overflow:hidden;}
+    .cta-final::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 70% 50%,rgba(0,166,166,.12),transparent 60%);pointer-events:none;}
+    .cta-wrap{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1;}
+    .cta-text h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.9rem,3.5vw,3.2rem);font-weight:800;color:#fff;line-height:1.08;margin-bottom:14px;}
+    .cta-text h2 em{color:var(--turquoise);font-style:normal;}
+    .cta-text p{font-size:.9rem;color:rgba(255,255,255,.45);line-height:1.75;font-weight:300;}
+    .cta-actions{display:flex;flex-direction:column;gap:14px;}
+    .btn-champagne{background:var(--champagne);color:var(--navy);text-decoration:none;padding:16px 36px;border-radius:999px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.9rem;font-weight:800;text-align:center;transition:background .25s,transform .2s;display:block;}
+    .btn-champagne:hover{background:#e8c87a;transform:translateY(-2px);}
+    .btn-outline-glass{background:rgba(255,255,255,.1);color:#fff;text-decoration:none;padding:15px 36px;border-radius:999px;font-size:.88rem;font-weight:500;border:1.5px solid rgba(255,255,255,.25);text-align:center;transition:background .25s;display:block;}
+    .btn-outline-glass:hover{background:rgba(255,255,255,.18);}
+
+    /* ── FOOTER ── */
+    footer{background:var(--navy-d);padding:52px 64px;border-top:1px solid rgba(255,255,255,.05);}
+    .footer-inner{max-width:1360px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;}
+    .footer-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.9rem;color:rgba(255,255,255,.3);}
+    .footer-logo em{color:var(--turquoise);font-style:normal;}
+    .footer-links{display:flex;gap:28px;flex-wrap:wrap;}
+    .footer-links a{color:rgba(255,255,255,.28);text-decoration:none;font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;}
+    .footer-links a:hover{color:rgba(255,255,255,.7);}
+    .footer-copy{font-size:.65rem;color:rgba(255,255,255,.14);}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1024px){
+      .hist-grid,.cta-wrap{grid-template-columns:1fr;gap:40px;}
+      .stats-inner{grid-template-columns:1fr 1fr;}
+      .val-grid,.team-grid{grid-template-columns:1fr;}
+      .sec-wrap{padding:0 40px;}
+      nav{padding:0 40px;}
+      .cta-final{padding:80px 40px;}
+      footer{padding:40px;}
+      .page-hero{padding:120px 40px 88px;}
     }
-
-    .page-hero h1 {
-      color: var(--blanc);
-      margin: 24px 0 20px;
+    @media(max-width:768px){
+      nav{padding:0 20px;height:60px;}
+      .nav-links{display:none;}
+      .nav-mobile-cta{display:flex;}
+      .page-hero{padding:100px 20px 80px;clip-path:none;margin-bottom:0;}
+      .page-hero h1{font-size:clamp(1.9rem,7vw,3rem);}
+      .sec-wrap{padding:0 20px;}
+      .histoire{padding:72px 0 60px;}
+      .stats-inner{grid-template-columns:1fr 1fr;padding:0 20px;}
+      .sb{padding:24px 16px;}
+      .sb-num{font-size:clamp(2rem,8vw,3rem);}
+      .valeurs,.equipe{padding:64px 0;}
+      .cta-final{padding:64px 20px;}
+      .cta-wrap{grid-template-columns:1fr;gap:40px;}
+      footer{padding:40px 20px;}
+      .footer-inner{flex-direction:column;align-items:flex-start;gap:16px;}
+      .footer-links{gap:12px 20px;}
     }
-
-    .page-hero h1 span {
-      background: linear-gradient(135deg, var(--teal-light), var(--orange-warm));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .page-hero p {
-      color: rgba(255,255,255,0.65);
-      font-size: 18px;
-    }
-
-    /* Story Section */
-    .story-section {
-      background: var(--blanc);
-    }
-
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .story-text h2 {
-      margin-bottom: 24px;
-    }
-
-    .story-text p {
-      color: var(--grey-600);
-      font-size: 17px;
-      margin-bottom: 20px;
-      line-height: 1.75;
-    }
-
-    .story-visual {
-      position: relative;
-    }
-
-    .story-card-big {
-      padding: 48px;
-      background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
-      border-radius: var(--radius-xl);
-      color: var(--blanc);
-    }
-
-    .story-card-big .big-number {
-      font-family: var(--font-display);
-      font-size: 6rem;
-      font-weight: 800;
-      line-height: 1;
-      opacity: 0.2;
-    }
-
-    .story-card-big h3 {
-      font-size: 1.8rem;
-      margin-top: -20px;
-      margin-bottom: 16px;
-    }
-
-    .story-card-big p {
-      color: rgba(255,255,255,0.75);
-      font-size: 16px;
-    }
-
-    .story-float-card {
-      position: absolute;
-      bottom: -28px;
-      right: -28px;
-      background: var(--blanc);
-      border-radius: var(--radius-lg);
-      padding: 24px 28px;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .story-float-card .float-number {
-      font-family: var(--font-display);
-      font-size: 2.5rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--teal), var(--orange));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      line-height: 1;
-    }
-
-    .story-float-card .float-label {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--grey-600);
-      max-width: 100px;
-      line-height: 1.4;
-    }
-
-    @media (max-width: 900px) {
-      .story-grid { grid-template-columns: 1fr; gap: 48px; }
-      .story-float-card { position: static; margin-top: 20px; display: inline-flex; }
-    }
-
-    /* Values Section */
-    .values-section {
-      background: var(--grey-100);
-    }
-
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      margin-top: 48px;
-    }
-
-    .value-card {
-      padding: 40px 32px;
-      text-align: center;
-    }
-
-    .value-icon {
-      width: 72px;
-      height: 72px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, rgba(107,168,160,0.12), rgba(107,168,160,0.06));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-size: 28px;
-    }
-
-    .value-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 12px;
-    }
-
-    .value-card p {
-      color: var(--grey-600);
-      font-size: 15px;
-      line-height: 1.7;
-      margin: 0 auto;
-    }
-
-    @media (max-width: 900px) {
-      .values-grid { grid-template-columns: 1fr; }
-    }
-
-    /* Timeline */
-    .timeline-section {
-      background: var(--blanc);
-    }
-
-    .timeline {
-      position: relative;
-      max-width: 700px;
-      margin: 48px auto 0;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--teal), var(--orange));
-      transform: translateX(-50%);
-    }
-
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: 24px;
-      align-items: center;
-      margin-bottom: 48px;
-    }
-
-    .timeline-item:nth-child(even) .timeline-content {
-      grid-column: 3;
-      grid-row: 1;
-    }
-
-    .timeline-item:nth-child(even) .timeline-empty {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .timeline-dot {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: var(--teal);
-      border: 3px solid var(--blanc);
-      box-shadow: 0 0 0 3px var(--teal);
-      grid-column: 2;
-      z-index: 1;
-    }
-
-    .timeline-content {
-      padding: 24px;
-      background: var(--grey-100);
-      border-radius: var(--radius-md);
-    }
-
-    .timeline-year {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--teal-dark);
-      margin-bottom: 6px;
-    }
-
-    .timeline-content h4 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    .timeline-content p {
-      font-size: 14px;
-      color: var(--grey-600);
-    }
-
-    /* Timeline mobile */
-    @media (max-width: 640px) {
-      .timeline::before { left: 12px; transform: none; }
-      .timeline-item {
-        grid-template-columns: 28px 1fr;
-        gap: 14px;
-        margin-bottom: 28px;
-      }
-      .timeline-empty { display: none !important; }
-      .timeline-dot {
-        grid-column: 1 !important;
-        grid-row: 1 !important;
-        align-self: start;
-        margin-top: 4px;
-      }
-      .timeline-content {
-        grid-column: 2 !important;
-        grid-row: 1 !important;
-      }
-    }
-
-    /* Zone Section */
-    .zone-section {
-      background: var(--noir);
-    }
-
-    .zone-tags {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .zone-tag {
-      padding: 12px 24px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 100px;
-      font-size: 15px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.8);
-      transition: var(--transition);
-    }
-
-    .zone-tag:hover,
-    .zone-tag.primary {
-      background: rgba(107,168,160,0.15);
-      border-color: var(--teal);
-      color: var(--teal-light);
+    @media(max-width:480px){
+      nav{padding:0 16px;}
+      .page-hero{padding:90px 16px 72px;}
+      .sec-wrap{padding:0 16px;}
+      .stats-inner{padding:0 16px;}
+      .cta-final{padding:52px 16px;}
+      footer{padding:32px 16px;}
     }
   </style>
 </head>
 <body>
 
-  <!-- ─── Header ─────────────────────────── -->
-  <header class="site-header scrolled" id="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="/">
-          <img src="assets/logo-blanc.png" alt="Hostopia" class="header-logo">
-        </a>
-        <nav class="header-nav" aria-label="Navigation principale">
-          <a href="/">Accueil</a>
-          <a href="qui-sommes-nous.html" style="color: var(--teal-light);">Qui sommes-nous</a>
-          <a href="/blog">Blog</a>
-        </nav>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary header-cta" target="_blank" rel="noopener">
-          Prendre RDV
-        </a>
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Conciergerie <em>Val d'Europe</em></a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/qui-sommes-nous" class="active">Qui sommes-nous</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener" class="nav-cta">Prendre rendez-vous</a></li>
+  </ul>
+  <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="nav-mobile-cta" target="_blank" rel="noopener">Estimer →</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <svg class="hero-bg" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <line x1="0" y1="200" x2="400" y2="150" stroke="rgba(0,166,166,0.07)" stroke-width="1"/>
+    <line x1="400" y1="150" x2="720" y2="200" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+    <line x1="720" y1="200" x2="1100" y2="140" stroke="rgba(0,166,166,0.07)" stroke-width="1"/>
+    <line x1="1100" y1="140" x2="1440" y2="200" stroke="rgba(0,166,166,0.07)" stroke-width="1"/>
+    <circle cx="400" cy="150" r="3" fill="rgba(0,166,166,0.3)"/>
+    <circle cx="720" cy="200" r="5" fill="rgba(0,166,166,0.4)"/>
+    <circle cx="1100" cy="140" r="3" fill="rgba(0,166,166,0.3)"/>
+  </svg>
+  <div class="page-hero-inner">
+    <p class="page-eyebrow">Notre équipe</p>
+    <h1>L'équipe qui maîtrise<br>le marché <em>Val d'Europe</em></h1>
+    <p class="page-hero-sub">Nous gérons votre bien comme un actif hôtelier — pricing dynamique, connaissance des flux touristiques, opérations sans friction.</p>
+  </div>
+  <div class="hero-turquoise-line"></div>
+</section>
+
+<!-- HISTOIRE -->
+<section class="histoire" style="padding-top:130px;">
+  <div class="sec-wrap">
+    <div class="hist-grid">
+      <div class="hist-text">
+        <p class="sec-label reveal">Notre histoire</p>
+        <h2 class="sec-title reveal d1" style="margin-bottom:28px;">Nés dans le flux<br>touristique international</h2>
+        <p class="reveal d2"><strong>Val d'Europe n'est pas une ville ordinaire.</strong> C'est une destination structurée autour du flux touristique le plus dense d'Europe — 15 millions de visiteurs par an dans un rayon de 5 km. Nous avons compris très tôt que gérer un bien ici, c'est piloter un actif hôtelier, pas louer un appartement.</p>
+        <p class="reveal d3">Depuis 2019, notre équipe gère des biens à Val d'Europe, Serris, Chessy et dans l'ensemble du bassin Marne-la-Vallée sous la marque <strong>Hostopia</strong>. Nous analysons les vacances scolaires européennes, les pics Disneyland, les événements outlet — et nous tarifons chaque nuit en conséquence.</p>
+        <p class="reveal d3">Résultat : nos propriétaires perçoivent en moyenne 3× plus qu'en location classique, avec zéro friction de gestion.</p>
+      </div>
+      <div class="reveal d2">
+        <div class="hist-card">
+          <div class="hist-year">2019</div>
+          <h3>Premier bien géré à Val d'Europe</h3>
+          <p>Un T2 à Serris, des familles anglaises en voyage Disneyland, 11 mois d'occupation haute saison. C'est comme ça que nous avons compris la puissance de ce marché.</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(16,42,67,.08);">
+            <p style="font-size:.83rem;color:var(--muted);font-weight:300;line-height:1.7;">Notre équipe est basée à proximité directe. Nous connaissons les arrivées TGV, les événements du centre commercial, les week-ends de forte demande — tout ce qui fait monter vos prix de nuit.</p>
+          </div>
+          <span class="hist-tag">Val d'Europe · Serris · Chessy · 77</span>
+        </div>
+        <!-- Mini hub SVG illustration -->
+        <svg viewBox="0 0 400 140" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:16px;width:100%;opacity:.45;" aria-hidden="true">
+          <line x1="50" y1="70" x2="200" y2="70" stroke="rgba(0,166,166,0.5)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="200" y1="70" x2="350" y2="30" stroke="rgba(0,166,166,0.5)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="200" y1="70" x2="350" y2="110" stroke="rgba(95,141,106,0.5)" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="200" y1="70" x2="200" y2="15" stroke="rgba(214,179,106,0.5)" stroke-width="1" stroke-dasharray="4 4"/>
+          <circle cx="50" cy="70" r="4" fill="rgba(0,166,166,0.3)" stroke="rgba(0,166,166,0.5)" stroke-width="1"/>
+          <circle cx="200" cy="70" r="8" fill="rgba(0,166,166,0.25)" stroke="#00A6A6" stroke-width="1.5"/>
+          <circle cx="200" cy="70" r="4" fill="#00A6A6"/>
+          <circle cx="350" cy="30" r="4" fill="rgba(0,166,166,0.3)" stroke="rgba(0,166,166,0.5)" stroke-width="1"/>
+          <circle cx="350" cy="110" r="4" fill="rgba(95,141,106,0.3)" stroke="rgba(95,141,106,0.5)" stroke-width="1"/>
+          <circle cx="200" cy="15" r="4" fill="rgba(214,179,106,0.3)" stroke="rgba(214,179,106,0.5)" stroke-width="1"/>
+          <text x="30" y="88" font-family="Inter,sans-serif" font-size="7" fill="rgba(16,42,67,0.5)" letter-spacing="1">PARIS</text>
+          <text x="185" y="92" font-family="Inter,sans-serif" font-size="7" fill="rgba(0,166,166,0.8)" text-anchor="middle" letter-spacing="1" font-weight="600">VAL D'EU.</text>
+          <text x="340" y="22" font-family="Inter,sans-serif" font-size="7" fill="rgba(16,42,67,0.4)" letter-spacing="1">SERRIS</text>
+          <text x="332" y="125" font-family="Inter,sans-serif" font-size="7" fill="rgba(95,141,106,0.7)" letter-spacing="1">VIL.NAT.</text>
+        </svg>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
+<!-- STATS BAND -->
+<section class="stats-band">
+  <div class="stats-inner">
+    <div class="sb reveal"><span class="sb-num">20<span style="color:var(--turquoise);">+</span></span><div class="sb-lbl">Logements gérés<br>en Île-de-France</div></div>
+    <div class="sb reveal d1"><span class="sb-num">95<span style="font-size:.55em;color:var(--turquoise);">%</span></span><div class="sb-lbl">Taux d'occupation<br>moyen haute saison</div></div>
+    <div class="sb reveal d2"><span class="sb-num">3<span style="color:var(--champagne);">×</span></span><div class="sb-lbl">Plus de revenus vs<br>location classique</div></div>
+    <div class="sb reveal d3"><span class="sb-num">15<span style="font-size:.55em;color:var(--turquoise);">h</span></span><div class="sb-lbl">Économisées par semaine<br>pour chaque propriétaire</div></div>
+  </div>
+</section>
 
-    <!-- ─── Page Hero ───────────────────────── -->
-    <section class="page-hero" aria-labelledby="page-title">
-      <div class="orb orb-teal orb-1"></div>
-      <div class="orb orb-orange orb-2"></div>
-      <div class="container">
-        <div class="page-hero-content">
-          <span class="badge">Notre histoire</span>
-          <h1 id="page-title">
-            Des passionnés d'immobilier <span>au service des propriétaires du 77</span>
-          </h1>
-          <p>
-            15 ans d'expertise, 20+ logements en gestion, une connaissance intime du marché Val d'Europe et Île-de-France. Nous ne gérons pas des biens — nous gérons votre patrimoine.
-          </p>
-        </div>
+<!-- VALEURS -->
+<section class="valeurs">
+  <div class="sec-wrap">
+    <p class="sec-label reveal">Notre approche</p>
+    <h2 class="sec-title reveal d1">Trois piliers, une seule obsession : vos revenus</h2>
+    <div class="val-grid">
+      <div class="val-card reveal d1">
+        <div class="val-num">01</div>
+        <h3>Expertise locale du marché</h3>
+        <p>Nous connaissons les vacances scolaires britanniques, allemandes et espagnoles mieux que quiconque. Nous savons quand Disneyland génère un pic, quand l'outlet attire les shoppers européens. Cette donnée se traduit en tarification précise.</p>
       </div>
-    </section>
-
-    <!-- ─── Story ───────────────────────────── -->
-    <section class="story-section section" aria-labelledby="story-title">
-      <div class="container">
-        <div class="story-grid">
-          <div class="story-text reveal">
-            <span class="badge">Notre parcours</span>
-            <div class="divider"></div>
-            <h2 id="story-title">De l'investissement personnel à la gestion professionnelle</h2>
-            <p>
-              Tout a commencé par nos propres investissements locatifs en Seine-et-Marne. Face à la complexité de la gestion Airbnb — communication nocturne, ménage, dépannages — nous avons développé nos processus pour automatiser et déléguer.
-            </p>
-            <p>
-              Rapidement, d'autres propriétaires nous ont demandé d'appliquer la même méthode à leurs biens. Aujourd'hui, Hostopia Serris gère plus de 20 logements dans la zone Disneyland Paris — Val d'Europe, avec des résultats qui parlent d'eux-mêmes.
-            </p>
-            <p>
-              Notre avantage : nous sommes investisseurs avant d'être prestataires. Nous pensons rentabilité, pas seulement service.
-            </p>
-          </div>
-
-          <div class="story-visual reveal reveal-delay-1">
-            <div class="story-card-big">
-              <div class="big-number">15</div>
-              <h3>ans d'expertise<br>immobilière</h3>
-              <p>En gestion locative et investissement Airbnb en Seine-et-Marne</p>
-            </div>
-            <div class="story-float-card">
-              <div class="float-number">20+</div>
-              <div class="float-label">logements en gestion dans le 77</div>
-            </div>
-          </div>
-        </div>
+      <div class="val-card reveal d2">
+        <div class="val-num">02</div>
+        <h3>Opérations hôtelières</h3>
+        <p>Checklists exhaustives, prestataires certifiés, linge hôtelier de qualité, réponse voyageurs en moins de 30 minutes. Nous gérons votre bien avec les standards d'un hôtel 4 étoiles — pour que vos notes restent au sommet.</p>
       </div>
-    </section>
-
-    <!-- ─── Valeurs ──────────────────────────── -->
-    <section class="values-section section" aria-labelledby="values-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Ce qui nous guide</span>
-          <div class="divider divider-center"></div>
-          <h2 id="values-title">Nos 3 piliers</h2>
-          <p>Les valeurs qui définissent notre approche et notre relation avec chaque propriétaire.</p>
-        </header>
-
-        <div class="values-grid">
-          <article class="glass-card value-card reveal">
-            <div class="value-icon">📈</div>
-            <h3>Performance d'abord</h3>
-            <p>Chaque décision — tarif, calendrier, description — est guidée par les données. Notre objectif : maximiser votre rentabilité mesurable, pas juste votre occupation.</p>
-          </article>
-
-          <article class="glass-card value-card reveal reveal-delay-1">
-            <div class="value-icon">🤝</div>
-            <h3>Transparence totale</h3>
-            <p>Rapports mensuels détaillés, accès en temps réel à vos statistiques, pas de frais cachés. Vous savez toujours exactement ce que nous faisons et ce que vous gagnez.</p>
-          </article>
-
-          <article class="glass-card value-card reveal reveal-delay-2">
-            <div class="value-icon">🏆</div>
-            <h3>Excellence opérationnelle</h3>
-            <p>Ménage 5 étoiles, linge hôtelier, check-in digital, maintenance préventive. Votre bien mérite le même standard qu'un boutique-hôtel.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─── Timeline ─────────────────────────── -->
-    <section class="timeline-section section" aria-labelledby="timeline-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Notre histoire</span>
-          <div class="divider divider-center"></div>
-          <h2 id="timeline-title">15 ans d'expertise, une évolution constante</h2>
-        </header>
-
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-content">
-              <div class="timeline-year">2010</div>
-              <h4>Les premiers investissements</h4>
-              <p>Premiers achats immobiliers en Seine-et-Marne. Découverte du potentiel locatif près de Disneyland Paris.</p>
-            </div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-empty"></div>
-          </div>
-
-          <div class="timeline-item reveal reveal-delay-1">
-            <div class="timeline-empty"></div>
-            <div class="timeline-dot" style="background: var(--orange);"></div>
-            <div class="timeline-content">
-              <div class="timeline-year" style="color:var(--orange);">2016</div>
-              <h4>Lancement Airbnb</h4>
-              <p>Passage à la location courte durée sur nos propres biens. Résultats : +180% de revenus vs location classique.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal reveal-delay-2">
-            <div class="timeline-content">
-              <div class="timeline-year">2019</div>
-              <h4>Les premiers mandats</h4>
-              <p>Des propriétaires voisins nous confient leurs biens. Construction du modèle Hostopia.</p>
-            </div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-empty"></div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-empty"></div>
-            <div class="timeline-dot" style="background: var(--teal-light);"></div>
-            <div class="timeline-content">
-              <div class="timeline-year" style="color:var(--teal-light);">2025</div>
-              <h4>Hostopia Serris — 20+ biens</h4>
-              <p>Plus de 20 logements en gestion active, taux d'occupation 95% en haute saison, présence sur tout le secteur Val d'Europe.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─── Zone d'intervention ──────────────── -->
-    <section class="zone-section section" aria-labelledby="zone-title">
-      <div class="container">
-        <div style="max-width:680px;">
-          <span class="badge">Zone d'intervention</span>
-          <div class="divider"></div>
-          <h2 id="zone-title" style="color:var(--blanc);">
-            Nous couvrons tout<br>
-            <span style="background: linear-gradient(135deg, var(--teal-light), var(--orange-warm)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">le secteur Disneyland</span>
-          </h2>
-          <p style="color:rgba(255,255,255,0.6); font-size:17px; margin-top:20px; max-width:52ch;">
-            De Serris à Val d'Europe, en passant par Chessy et Marne-la-Vallée — notre connaissance de terrain est notre force.
-          </p>
-          <div class="zone-tags reveal">
-            <span class="zone-tag primary">Serris</span>
-            <span class="zone-tag">Chessy</span>
-            <span class="zone-tag">Val d'Europe</span>
-            <span class="zone-tag">Disneyland Paris</span>
-            <span class="zone-tag">Marne-la-Vallée</span>
-            <span class="zone-tag">Coupvray</span>
-            <span class="zone-tag">Bailly-Romainvilliers</span>
-            <span class="zone-tag">Magny-le-Hongre</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─── CTA Final ────────────────────────── -->
-    <section class="section" style="background: var(--cream); text-align:center;" aria-label="Appel à l'action">
-      <div class="container">
-        <h2 class="reveal" style="margin-bottom:16px;">Prêt à travailler avec nous&nbsp;?</h2>
-        <p class="reveal reveal-delay-1" style="color:var(--grey-600); font-size:18px; margin:0 auto 40px; max-width:48ch;">
-          Discutons de votre bien et de son potentiel Airbnb à Val d'Europe. Premier échange gratuit, sans engagement.
-        </p>
-        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;" class="reveal reveal-delay-2">
-          <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary" style="padding:16px 36px;" target="_blank" rel="noopener">
-            Prendre rendez-vous
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0" class="btn btn-outline" style="padding:16px 36px;" target="_blank" rel="noopener">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Écrire sur WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ─── Footer ─────────────────────────── -->
-  <footer class="site-footer" aria-label="Pied de page">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="assets/logo-blanc.png" alt="Hostopia" class="footer-logo">
-          <p>Conciergerie Airbnb premium à Val d'Europe et en Seine-et-Marne. Nous gérons votre bien pour maximiser vos revenus locatifs.</p>
-        </div>
-        <nav class="footer-col" aria-label="Liens du site">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
-        </nav>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener">Prendre RDV</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><a href="mailto:contact@hostopia.fr">Email</a></li>
-            <li><a href="https://hostopia.fr" target="_blank" rel="noopener">hostopia.fr</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Hostopia. Tous droits réservés.</p>
-        <p>Serris · Chessy · Val d'Europe · Marne-la-Vallée</p>
+      <div class="val-card reveal d3">
+        <div class="val-num">03</div>
+        <h3>Transparence et reporting</h3>
+        <p>Rapport mensuel détaillé, accès en temps réel à vos revenus, aucune commission cachée. Vous gérez votre patrimoine avec des données claires. Pas d'opacité, pas de surprise.</p>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- ─── WhatsApp Floating Button ────────── -->
-  <a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    <span class="wa-label">Discutons sur WhatsApp</span>
-  </a>
+<!-- ÉQUIPE -->
+<section class="equipe">
+  <div class="sec-wrap">
+    <p class="sec-label reveal">L'équipe</p>
+    <h2 class="sec-title reveal d1">Les experts derrière la performance</h2>
+    <div class="team-grid">
+      <!-- Card 1 -->
+      <div class="team-card reveal d1">
+        <div class="team-avatar">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;" aria-hidden="true">
+            <rect width="400" height="400" fill="#EAF3F8"/>
+            <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+            <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+            <line x1="0" y1="300" x2="400" y2="300" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+            <line x1="100" y1="0" x2="100" y2="400" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+            <line x1="200" y1="0" x2="200" y2="400" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+            <line x1="300" y1="0" x2="300" y2="400" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+            <text x="200" y="240" font-family="'Plus Jakarta Sans',sans-serif" font-size="110" font-weight="800" fill="rgba(0,166,166,0.18)" text-anchor="middle">AL</text>
+            <rect x="0" y="392" width="400" height="8" fill="rgba(0,166,166,0.6)"/>
+          </svg>
+        </div>
+        <div class="team-info">
+          <h3>Alexandre Leroy</h3>
+          <div class="team-role">Fondateur &amp; Directeur</div>
+          <p>Expert gestion locative courte durée depuis 2017. Spécialiste du marché touristique Marne-la-Vallée, il a développé une méthodologie de tarification unique aux flux européens.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="team-card reveal d2">
+        <div class="team-avatar">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;" aria-hidden="true">
+            <rect width="400" height="400" fill="#F8FAFC"/>
+            <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(0,166,166,0.08)" stroke-width="1"/>
+            <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(0,166,166,0.08)" stroke-width="1"/>
+            <line x1="0" y1="300" x2="400" y2="300" stroke="rgba(0,166,166,0.08)" stroke-width="1"/>
+            <line x1="100" y1="0" x2="100" y2="400" stroke="rgba(0,166,166,0.08)" stroke-width="1"/>
+            <line x1="200" y1="0" x2="200" y2="400" stroke="rgba(0,166,166,0.08)" stroke-width="1"/>
+            <line x1="300" y1="0" x2="300" y2="400" stroke="rgba(0,166,166,0.08)" stroke-width="1"/>
+            <text x="200" y="240" font-family="'Plus Jakarta Sans',sans-serif" font-size="110" font-weight="800" fill="rgba(214,179,106,0.22)" text-anchor="middle">CM</text>
+            <rect x="0" y="392" width="400" height="8" fill="rgba(214,179,106,0.5)"/>
+          </svg>
+        </div>
+        <div class="team-info">
+          <h3>Clara Moreau</h3>
+          <div class="team-role">Revenue Manager</div>
+          <p>Elle analyse les données de demande en temps réel — vacances européennes, événements, météo — pour maximiser le revenu par nuit de chaque logement du portefeuille.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="team-card reveal d3">
+        <div class="team-avatar">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;" aria-hidden="true">
+            <rect width="400" height="400" fill="#EAF3F8"/>
+            <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(95,141,106,0.1)" stroke-width="1"/>
+            <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(95,141,106,0.1)" stroke-width="1"/>
+            <line x1="0" y1="300" x2="400" y2="300" stroke="rgba(95,141,106,0.1)" stroke-width="1"/>
+            <line x1="100" y1="0" x2="100" y2="400" stroke="rgba(95,141,106,0.1)" stroke-width="1"/>
+            <line x1="200" y1="0" x2="200" y2="400" stroke="rgba(95,141,106,0.1)" stroke-width="1"/>
+            <line x1="300" y1="0" x2="300" y2="400" stroke="rgba(95,141,106,0.1)" stroke-width="1"/>
+            <text x="200" y="240" font-family="'Plus Jakarta Sans',sans-serif" font-size="110" font-weight="800" fill="rgba(95,141,106,0.18)" text-anchor="middle">NB</text>
+            <rect x="0" y="392" width="400" height="8" fill="rgba(95,141,106,0.5)"/>
+          </svg>
+        </div>
+        <div class="team-info">
+          <h3>Nora Benali</h3>
+          <div class="team-role">Responsable Opérations</div>
+          <p>Coordinatrice des rotations, prestataires et qualité hôtelière. Chaque départ-arrivée est une prestation standardisée. Aucun séjour ne commence sans un logement parfait.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script>
-    // Header scroll — this page starts scrolled
-    const header = document.getElementById('site-header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 40);
-      if (window.scrollY <= 40) header.classList.add('scrolled');
-    }, { passive: true });
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="cta-wrap">
+    <div class="cta-text reveal">
+      <h2>Travaillez avec<br>les experts de <em>Val d'Europe</em></h2>
+      <p>Un appel de 20 minutes pour analyser votre bien, estimer vos revenus potentiels et vous expliquer comment nous pilotons votre actif hôtelier.</p>
+    </div>
+    <div class="cta-actions reveal d2">
+      <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" target="_blank" rel="noopener" class="btn-champagne">Estimer mes revenus →</a>
+      <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener" class="btn-outline-glass">Prendre rendez-vous avec un expert</a>
+    </div>
+  </div>
+</section>
 
-    // Scroll reveal
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      }),
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    );
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Conciergerie <em>Val d'Europe</em></div>
+    <div class="footer-links">
+      <a href="/">Accueil</a>
+      <a href="/qui-sommes-nous">Qui sommes-nous</a>
+      <a href="/blog">Blog</a>
+    </div>
+    <p class="footer-copy">© 2025 Hostopia — Conciergerie Airbnb Val d'Europe · Marne-la-Vallée · 77</p>
+  </div>
+</footer>
 
+<a href="https://wa.me/33767209266" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-label">WhatsApp</span>
+</a>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);} }), {threshold:.1});
+  reveals.forEach(r => io.observe(r));
+</script>
 </body>
 </html>

@@ -1,66 +1,361 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL60XQ455W"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YL60XQ455W');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Airbnb Val d'Europe | Hostopia — Conseils propriétaires</title>
-  <meta name="description" content="Conseils, guides et stratégies pour les propriétaires Airbnb à Val d'Europe. Par l'équipe Hostopia.">
+  <title>Blog Investisseurs | Conciergerie Val d'Europe — Revenus locatifs Marne-la-Vallée</title>
+  <meta name="description" content="Ressources investisseurs Val d'Europe. Guides Airbnb, fiscalité LMNP 77, revenus locatifs haute saison — tout ce que vous devez savoir pour rentabiliser votre bien.">
   <link rel="canonical" href="https://conciergerievaldeurope.fr/blog">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;overflow-x:hidden;}
+    body{font-family:'Inter',sans-serif;font-weight:400;color:#102A43;background:#F8FAFC;overflow-x:hidden;}
+    :root{
+      --white:#F8FAFC;--glacier:#EAF3F8;--navy:#102A43;--navy-d:#0A1C2E;
+      --turquoise:#00A6A6;--turquoise-d:#007F7F;--champagne:#D6B36A;--champagne-d:#B8952E;
+      --coral:#FF6B4A;--resort:#5F8D6A;--border:#CBD5E1;--muted:rgba(16,42,67,0.5);
+      --card-shadow:0 20px 60px rgba(16,42,67,0.10);
+    }
+    h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em;}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1);}
+    .reveal.visible{opacity:1;transform:none;}
+    .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.7);}}
+    @keyframes floatA{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+
+    /* ── NAV ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:300;padding:0 64px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,250,252,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(16,42,67,0.08);}
+    .nav-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.92rem;color:var(--navy);text-decoration:none;}
+    .nav-logo em{color:var(--turquoise);font-style:normal;}
+    .nav-links{display:flex;gap:40px;list-style:none;align-items:center;}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:color .2s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--turquoise);}
+    .nav-cta{background:var(--navy)!important;color:#fff!important;padding:9px 22px;border-radius:999px;font-size:.8rem!important;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:0!important;text-transform:none!important;transition:background .25s!important;}
+    .nav-cta:hover{background:var(--turquoise)!important;}
+    .nav-mobile-cta{display:none;background:var(--navy);color:#fff;text-decoration:none;padding:8px 16px;border-radius:999px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.78rem;font-weight:700;}
+
+    /* ── WA ── */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;background:#25D366;color:#fff;width:54px;height:54px;border-radius:27px;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:transform .25s,width .3s,padding .3s;overflow:hidden;white-space:nowrap;}
+    .wa-float svg{width:24px;height:24px;flex-shrink:0;}
+    .wa-label{display:none;font-size:.8rem;font-weight:500;margin-left:9px;margin-right:3px;}
+    .wa-float:hover{transform:scale(1.04);width:auto;padding:0 16px 0 13px;}
+    .wa-float:hover .wa-label{display:inline;}
+
+    /* ── PAGE HERO ── */
+    .page-hero{padding:140px 64px 100px;background:linear-gradient(135deg,var(--navy) 0%,#0D3B5E 60%,rgba(0,166,166,.35) 100%);position:relative;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 88%,0 100%);margin-bottom:-48px;}
+    .hero-bg{position:absolute;inset:0;pointer-events:none;}
+    .page-hero-inner{max-width:1360px;margin:0 auto;position:relative;z-index:2;}
+    .page-eyebrow{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(0,166,166,.8);margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+    .page-eyebrow::before{content:'';width:20px;height:2px;background:var(--turquoise);}
+    .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.5vw,4rem);color:#fff;line-height:1.06;letter-spacing:-.03em;margin-bottom:18px;max-width:680px;}
+    .page-hero h1 em{color:var(--turquoise);font-style:normal;}
+    .page-hero-sub{font-size:.97rem;color:rgba(255,255,255,.45);line-height:1.8;max-width:480px;font-weight:300;}
+    .hero-turquoise-line{position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--turquoise);opacity:.5;}
+
+    /* ── LAYOUT ── */
+    .sec-wrap{max-width:1360px;margin:0 auto;padding:0 64px;}
+    .sec-label{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--turquoise);margin-bottom:12px;display:flex;align-items:center;gap:12px;}
+    .sec-label::before{content:'';width:20px;height:2px;background:var(--turquoise);}
+    .sec-title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.8rem);color:var(--navy);line-height:1.1;margin-bottom:40px;}
+
+    /* ── COMING SOON CARD ── */
+    .coming-section{background:#fff;padding:100px 0 80px;}
+    .coming-card{
+      background:var(--white);border:1px solid var(--border);border-radius:28px;
+      padding:52px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;
+      box-shadow:0 4px 24px rgba(16,42,67,.06);
+      position:relative;overflow:hidden;
+    }
+    .coming-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--turquoise),var(--champagne));}
+    .coming-badge{display:inline-flex;align-items:center;gap:8px;font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--turquoise);margin-bottom:16px;}
+    .badge-dot{width:7px;height:7px;border-radius:50%;background:var(--turquoise);animation:pulse 2s ease-in-out infinite;}
+    .coming-card h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.6rem,3vw,2.6rem);font-weight:800;color:var(--navy);line-height:1.1;margin-bottom:14px;}
+    .coming-card h2 em{color:var(--turquoise);font-style:normal;}
+    .coming-card p{font-size:.9rem;color:var(--muted);line-height:1.82;font-weight:300;max-width:500px;}
+    .coming-aside{flex-shrink:0;text-align:right;}
+    .coming-pct{font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:800;color:var(--turquoise);line-height:1;margin-bottom:6px;}
+    .coming-pct-label{font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+    .progress-track{width:120px;height:4px;background:var(--glacier);border-radius:2px;overflow:hidden;margin-left:auto;}
+    .progress-fill{height:100%;width:40%;background:linear-gradient(90deg,var(--turquoise),var(--champagne));border-radius:2px;}
+
+    /* ── TOPIC CARDS ── */
+    .topics-section{background:var(--glacier);padding:80px 0;}
+    .topics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .topic-card{
+      background:#fff;border:1px solid rgba(16,42,67,.07);border-radius:20px;
+      padding:32px 26px;transition:box-shadow .3s,transform .25s;
+      position:relative;overflow:hidden;
+    }
+    .topic-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--glacier);transition:background .3s;}
+    .topic-card:hover{box-shadow:var(--card-shadow);transform:translateY(-4px);}
+    .topic-card:hover::after{background:linear-gradient(90deg,var(--turquoise),var(--champagne));}
+    .topic-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;}
+    .tag-turquoise{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(0,166,166,.12);color:var(--turquoise);padding:4px 10px;border-radius:999px;}
+    .tag-champagne{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(214,179,106,.15);color:var(--champagne-d);padding:4px 10px;border-radius:999px;}
+    .topic-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.25;}
+    .topic-card p{font-size:.84rem;color:var(--muted);line-height:1.78;font-weight:300;margin-bottom:22px;}
+    .topic-soon{display:inline-flex;align-items:center;gap:8px;font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--turquoise);}
+    .topic-soon-line{width:14px;height:1.5px;background:var(--turquoise);}
+
+    /* ── NEWSLETTER ── */
+    .newsletter{background:var(--navy);padding:88px 0;position:relative;overflow:hidden;}
+    .newsletter::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 75% 50%,rgba(0,166,166,.12),transparent 60%);pointer-events:none;}
+    .nl-inner{max-width:1360px;margin:0 auto;padding:0 64px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1;}
+    .nl-text .sec-label-inv{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(0,166,166,.8);margin-bottom:12px;display:flex;align-items:center;gap:12px;}
+    .nl-text .sec-label-inv::before{content:'';width:20px;height:2px;background:var(--turquoise);}
+    .nl-text h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.6rem,3vw,2.6rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:14px;}
+    .nl-text h2 em{color:var(--turquoise);font-style:normal;}
+    .nl-text p{font-size:.88rem;color:rgba(255,255,255,.4);line-height:1.78;font-weight:300;}
+    .nl-form{display:flex;flex-direction:column;gap:14px;}
+    .nl-row{display:flex;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.12);}
+    .nl-input{flex:1;background:rgba(255,255,255,.07);border:none;color:#fff;font-family:'Inter',sans-serif;font-size:.88rem;padding:14px 18px;outline:none;transition:background .25s;}
+    .nl-input::placeholder{color:rgba(255,255,255,.25);}
+    .nl-input:focus{background:rgba(255,255,255,.1);}
+    .nl-btn{background:var(--turquoise);color:#fff;border:none;cursor:pointer;padding:14px 24px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:700;transition:background .25s;white-space:nowrap;}
+    .nl-btn:hover{background:var(--turquoise-d);}
+    .nl-note{font-size:.66rem;color:rgba(255,255,255,.2);line-height:1.6;}
+    /* Mini dashboard decoration */
+    .nl-dashboard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;margin-top:16px;}
+    .nl-dash-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+    .nl-dash-row:last-child{border-bottom:none;}
+    .nl-dash-label{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);}
+    .nl-dash-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:700;color:var(--champagne);}
+
+    /* ── CTA FINAL ── */
+    .cta-final{background:var(--white);padding:80px 64px;border-top:1px solid var(--border);}
+    .cta-wrap{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+    .cta-text h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--navy);line-height:1.08;margin-bottom:14px;}
+    .cta-text h2 em{color:var(--turquoise);font-style:normal;}
+    .cta-text p{font-size:.9rem;color:var(--muted);line-height:1.75;font-weight:300;}
+    .cta-actions{display:flex;flex-direction:column;gap:14px;}
+    .btn-navy-lg{background:var(--navy);color:#fff;text-decoration:none;padding:16px 36px;border-radius:999px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.9rem;font-weight:700;text-align:center;transition:background .25s,transform .2s;display:block;}
+    .btn-navy-lg:hover{background:var(--turquoise);transform:translateY(-2px);}
+    .btn-outline-navy{background:transparent;color:var(--navy);text-decoration:none;padding:15px 36px;border-radius:999px;font-size:.88rem;font-weight:500;border:1.5px solid var(--border);text-align:center;transition:border-color .25s,color .25s;display:block;}
+    .btn-outline-navy:hover{border-color:var(--turquoise);color:var(--turquoise);}
+
+    /* ── FOOTER ── */
+    footer{background:var(--navy-d);padding:52px 64px;border-top:1px solid rgba(255,255,255,.05);}
+    .footer-inner{max-width:1360px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;}
+    .footer-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.9rem;color:rgba(255,255,255,.3);}
+    .footer-logo em{color:var(--turquoise);font-style:normal;}
+    .footer-links{display:flex;gap:28px;flex-wrap:wrap;}
+    .footer-links a{color:rgba(255,255,255,.28);text-decoration:none;font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;}
+    .footer-links a:hover{color:rgba(255,255,255,.7);}
+    .footer-copy{font-size:.65rem;color:rgba(255,255,255,.14);}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1024px){
+      .nl-inner,.cta-wrap{grid-template-columns:1fr;gap:40px;}
+      .topics-grid{grid-template-columns:1fr 1fr;}
+      .sec-wrap{padding:0 40px;}
+      nav{padding:0 40px;}
+      .cta-final{padding:64px 40px;}
+      .newsletter{padding:64px 0;}
+      .nl-inner{padding:0 40px;}
+      .page-hero{padding:120px 40px 88px;}
+      footer{padding:40px;}
+    }
+    @media(max-width:768px){
+      nav{padding:0 20px;height:60px;}
+      .nav-links{display:none;}
+      .nav-mobile-cta{display:flex;}
+      .page-hero{padding:100px 20px 80px;clip-path:none;margin-bottom:0;}
+      .page-hero h1{font-size:clamp(1.9rem,7vw,3rem);}
+      .sec-wrap{padding:0 20px;}
+      .coming-section{padding:72px 0 60px;}
+      .coming-card{grid-template-columns:1fr;padding:32px 24px;gap:24px;}
+      .coming-card::before{display:none;}
+      .coming-aside{text-align:left;}
+      .progress-track{margin-left:0;}
+      .topics-grid{grid-template-columns:1fr;}
+      .nl-inner{padding:0 20px;gap:40px;}
+      .nl-row{flex-direction:column;border-radius:0;}
+      .nl-input{border-radius:10px 10px 0 0;}
+      .nl-btn{border-radius:0 0 10px 10px;padding:14px;}
+      .cta-final{padding:64px 20px;}
+      .cta-wrap{grid-template-columns:1fr;gap:36px;}
+      footer{padding:40px 20px;}
+      .footer-inner{flex-direction:column;align-items:flex-start;gap:16px;}
+      .footer-links{gap:12px 20px;}
+    }
+    @media(max-width:480px){
+      nav{padding:0 16px;}
+      .page-hero{padding:90px 16px 72px;}
+      .sec-wrap{padding:0 16px;}
+      .nl-inner{padding:0 16px;}
+      .cta-final{padding:52px 16px;}
+      footer{padding:32px 16px;}
+      .coming-card{padding:24px 16px;}
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header scrolled">
-    <div class="container">
-      <div class="header-inner">
-        <a href="../"><img src="../assets/logo-blanc.png" alt="Hostopia" class="header-logo"></a>
-        <nav class="header-nav">
-          <a href="../">Accueil</a>
-          <a href="../qui-sommes-nous.html">Qui sommes-nous</a>
-          <a href="." style="color:var(--teal-light);">Blog</a>
-        </nav>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary header-cta" target="_blank" rel="noopener">Prendre RDV</a>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Conciergerie <em>Val d'Europe</em></a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+    <li><a href="/blog" class="active">Blog</a></li>
+    <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener" class="nav-cta">Prendre rendez-vous</a></li>
+  </ul>
+  <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="nav-mobile-cta" target="_blank" rel="noopener">Estimer →</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <svg class="hero-bg" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <line x1="0" y1="200" x2="400" y2="150" stroke="rgba(0,166,166,0.07)" stroke-width="1"/>
+    <line x1="400" y1="150" x2="720" y2="200" stroke="rgba(0,166,166,0.1)" stroke-width="1"/>
+    <line x1="720" y1="200" x2="1100" y2="140" stroke="rgba(0,166,166,0.07)" stroke-width="1"/>
+    <circle cx="400" cy="150" r="3" fill="rgba(0,166,166,0.3)"/>
+    <circle cx="720" cy="200" r="5" fill="rgba(0,166,166,0.4)"/>
+    <circle cx="1100" cy="140" r="3" fill="rgba(0,166,166,0.3)"/>
+  </svg>
+  <div class="page-hero-inner">
+    <p class="page-eyebrow">Ressources investisseurs</p>
+    <h1>Guides Airbnb pour<br>propriétaires à <em>Val d'Europe</em></h1>
+    <p class="page-hero-sub">Revenus locatifs, fiscalité LMNP, saisonnalité touristique — tout ce que vous devez savoir pour piloter votre actif à Marne-la-Vallée.</p>
+  </div>
+  <div class="hero-turquoise-line"></div>
+</section>
+
+<!-- COMING SOON -->
+<section class="coming-section" style="padding-top:120px;">
+  <div class="sec-wrap">
+    <div class="coming-card reveal">
+      <div>
+        <div class="coming-badge"><span class="badge-dot"></span>En cours de rédaction</div>
+        <h2>Le guide complet de l'investisseur<br><em>Val d'Europe</em></h2>
+        <p>Revenus réels par type de bien, saisonnalité fine (vacances UK, Pâques, Noël, été), réglementation 77, fiscalité LMNP — un guide exhaustif par l'équipe qui gère des biens ici depuis 2019. Inscrivez-vous pour recevoir le guide à sa publication.</p>
+      </div>
+      <div class="coming-aside">
+        <div class="coming-pct">40%</div>
+        <div class="coming-pct-label">En cours</div>
+        <div class="progress-track"><div class="progress-fill"></div></div>
       </div>
     </div>
-  </header>
-  <style>
-    .blog-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px;margin-top:48px; }
-  </style>
-  <main style="padding-top:80px;">
-    <section class="section" style="background:var(--grey-100);padding:72px 0 56px;">
-      <div class="container" style="text-align:center;">
-        <span class="badge">Blog Airbnb Val d'Europe</span>
-        <div class="divider divider-center"></div>
-        <h1 style="margin-bottom:16px;">Conseils pour propriétaires Airbnb à Val d'Europe</h1>
-        <p style="color:var(--grey-600);font-size:18px;max-width:50ch;margin:0 auto;">Guides pratiques, estimations de revenus et stratégies Airbnb pour les propriétaires à Val d'Europe.</p>
+  </div>
+</section>
+
+<!-- TOPICS PREVIEW -->
+<section class="topics-section">
+  <div class="sec-wrap">
+    <p class="sec-label reveal">Prochains articles</p>
+    <h2 class="sec-title reveal d1">Contenus investisseurs en préparation</h2>
+    <div class="topics-grid">
+
+      <div class="topic-card reveal d1">
+        <div class="topic-tags">
+          <span class="tag-turquoise">Investissement Airbnb</span>
+          <span class="tag-champagne">Val d'Europe</span>
+        </div>
+        <h3>Combien rapporte un T2 à Val d'Europe en location courte durée&nbsp;?</h3>
+        <p>Analyse basée sur nos données réelles : revenus mensuels, taux d'occupation par saison, tarif moyen par nuit, profil des voyageurs. Données 2024-2025.</p>
+        <span class="topic-soon"><span class="topic-soon-line"></span>Bientôt disponible</span>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="blog-coming-soon" style="border:2px dashed var(--grey-200);border-radius:var(--radius-xl);padding:64px 40px;text-align:center;background:rgba(255,255,255,0.6);">
-          <div style="font-size:48px;margin-bottom:20px;">✍️</div>
-          <h3>Articles à venir</h3>
-          <p style="color:var(--grey-600);max-width:50ch;margin:0 auto;">Nos experts préparent des guides pratiques sur l'investissement Airbnb à Val d'Europe.</p>
+
+      <div class="topic-card reveal d2">
+        <div class="topic-tags">
+          <span class="tag-turquoise">Fiscalité LMNP</span>
+          <span class="tag-champagne">77 / Seine-et-Marne</span>
+        </div>
+        <h3>LMNP à Val d'Europe : fiscalité, amortissements et optimisation des revenus locatifs</h3>
+        <p>Le régime fiscal optimal pour un propriétaire Airbnb en Seine-et-Marne. Micro-BIC vs réel, cotisations, déclarations — tout ce qu'un investisseur doit maîtriser.</p>
+        <span class="topic-soon"><span class="topic-soon-line"></span>Bientôt disponible</span>
+      </div>
+
+      <div class="topic-card reveal d3">
+        <div class="topic-tags">
+          <span class="tag-turquoise">Revenus locatifs</span>
+          <span class="tag-champagne">Saisonnalité</span>
+        </div>
+        <h3>Saisonnalité Airbnb à Val d'Europe : vacances scolaires européennes, pics Disneyland et outlet</h3>
+        <p>Quand louer, à quel prix, pour quels voyageurs. Le calendrier complet des pics de demande à Marne-la-Vallée — et comment les anticiper pour maximiser vos revenus.</p>
+        <span class="topic-soon"><span class="topic-soon-line"></span>Bientôt disponible</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="nl-inner">
+    <div class="nl-text reveal">
+      <p class="sec-label-inv">Restez informé</p>
+      <h2>Les guides investisseurs<br><em>Val d'Europe</em>, en avant-première</h2>
+      <p>Propriétaire à Val d'Europe, Serris ou Chessy ? Recevez nos analyses de marché, études de rendement et guides fiscaux directement dans votre boîte mail.</p>
+    </div>
+    <div class="reveal d2">
+      <form class="nl-form" onsubmit="return false;">
+        <div class="nl-row">
+          <input type="email" class="nl-input" placeholder="votre@email.com" required>
+          <button type="submit" class="nl-btn">Recevoir les guides →</button>
+        </div>
+        <p class="nl-note">Zéro spam. Désabonnement immédiat. Vos données ne sont pas partagées.</p>
+      </form>
+      <!-- Mini performance dashboard decoration -->
+      <div class="nl-dashboard">
+        <div class="nl-dash-row">
+          <span class="nl-dash-label">Occupation haute saison</span>
+          <span class="nl-dash-val">95%</span>
+        </div>
+        <div class="nl-dash-row">
+          <span class="nl-dash-label">Revenus moyens T2</span>
+          <span class="nl-dash-val">1 850 €/mois</span>
+        </div>
+        <div class="nl-dash-row">
+          <span class="nl-dash-label">Multiplier vs location classique</span>
+          <span class="nl-dash-val">×3</span>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0;">
-        <p>&copy; 2026 Hostopia. Tous droits réservés.</p>
-        <p>Val d'Europe · Île-de-France</p>
-      </div>
     </div>
-  </footer>
-  <a href="https://api.whatsapp.com/send/?phone=33767209266" class="whatsapp-float" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span class="wa-label">Discutons sur WhatsApp</span>
-  </a>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="cta-wrap">
+    <div class="cta-text reveal">
+      <h2>Votre bien mérite<br>une gestion <em>data-driven</em></h2>
+      <p>Pas besoin d'attendre le guide — estimez vos revenus potentiels en 2 minutes. Notre simulateur est calibré sur les données réelles du marché Val d'Europe.</p>
+    </div>
+    <div class="cta-actions reveal d2">
+      <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" target="_blank" rel="noopener" class="btn-navy-lg">Estimer mes revenus →</a>
+      <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener" class="btn-outline-navy">Prendre rendez-vous avec un expert</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Conciergerie <em>Val d'Europe</em></div>
+    <div class="footer-links">
+      <a href="/">Accueil</a>
+      <a href="/qui-sommes-nous">Qui sommes-nous</a>
+      <a href="/blog">Blog</a>
+    </div>
+    <p class="footer-copy">© 2025 Hostopia — Conciergerie Airbnb Val d'Europe · Marne-la-Vallée · 77</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/33767209266" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-label">WhatsApp</span>
+</a>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);} }), {threshold:.1});
+  reveals.forEach(r => io.observe(r));
+</script>
 </body>
 </html>
