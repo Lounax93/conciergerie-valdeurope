@@ -15,6 +15,8 @@
     { "source": "/combien-rapporte-airbnb-val-europe", "destination": "/blog/combien-rapporte-airbnb-val-europe", "permanent": true },
     { "source": "/saisonnalite-airbnb-val-europe-disneyland", "destination": "/blog/saisonnalite-airbnb-val-europe-disneyland", "permanent": true },
     { "source": "/lmnp-val-europe-fiscalite-optimisation", "destination": "/blog/lmnp-val-europe-fiscalite-optimisation", "permanent": true },
-    { "source": "/reglementation-location-meublee-touristique-marne-la-vallee", "destination": "/blog/reglementation-location-meublee-touristique-marne-la-vallee", "permanent": true }
+    { "source": "/reglementation-location-meublee-touristique-marne-la-vallee", "destination": "/blog/reglementation-location-meublee-touristique-marne-la-vallee", "permanent": true },
+    { "source": "/reglementation-location-meublee-val-europe-2026", "destination": "/blog/reglementation-location-meublee-val-europe-2026", "permanent": true },
+    { "source": "/prix-immobilier-val-europe-investissement-airbnb-2026", "destination": "/blog/prix-immobilier-val-europe-investissement-airbnb-2026", "permanent": true }
   ]
 }
