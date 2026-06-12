@@ -23,6 +23,7 @@
     { "source": "/check-in-autonome-boite-cles-airbnb-val-europe", "destination": "/blog/check-in-autonome-boite-cles-airbnb-val-europe", "permanent": true },
     { "source": "/frais-menage-airbnb-val-europe-proprietaires", "destination": "/blog/frais-menage-airbnb-val-europe-proprietaires", "permanent": true },
     { "source": "/declaration-fiscale-airbnb-val-europe-2026", "destination": "/blog/declaration-fiscale-airbnb-val-europe-2026", "permanent": true },
-    { "source": "/saisonnalite-airbnb-val-europe-disneyland-outlet", "destination": "/blog/saisonnalite-airbnb-val-europe-disneyland-outlet", "permanent": true }
+    { "source": "/saisonnalite-airbnb-val-europe-disneyland-outlet", "destination": "/blog/saisonnalite-airbnb-val-europe-disneyland-outlet", "permanent": true },
+    { "source": "/superhost-airbnb-val-europe-criteres-2026", "destination": "/blog/superhost-airbnb-val-europe-criteres-2026", "permanent": true }
   ]
 }
