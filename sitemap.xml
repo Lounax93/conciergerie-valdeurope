@@ -174,4 +174,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://conciergerievaldeurope.fr/blog/strategie-multi-plateformes-airbnb-booking-abritel-val-europe</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
