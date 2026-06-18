@@ -27,6 +27,7 @@
     { "source": "/superhost-airbnb-val-europe-criteres-2026", "destination": "/blog/superhost-airbnb-val-europe-criteres-2026", "permanent": true },
     { "source": "/revenus-airbnb-serris-val-europe-2026", "destination": "/blog/revenus-airbnb-serris-val-europe-2026", "permanent": true },
     { "source": "/decoration-thematique-disney-airbnb-val-europe", "destination": "/blog/decoration-thematique-disney-airbnb-val-europe", "permanent": true },
-    { "source": "/taux-occupation-airbnb-val-europe-calendrier-2026", "destination": "/blog/taux-occupation-airbnb-val-europe-calendrier-2026", "permanent": true }
+    { "source": "/taux-occupation-airbnb-val-europe-calendrier-2026", "destination": "/blog/taux-occupation-airbnb-val-europe-calendrier-2026", "permanent": true },
+    { "source": "/investir-immobilier-locatif-val-europe-2026-prix-rendement", "destination": "/blog/investir-immobilier-locatif-val-europe-2026-prix-rendement", "permanent": true }
   ]
 }
