@@ -109,7 +109,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    P26-07-06</lastmod>
+    <loc>https://conciergerievaldeurope.fr/blog/check-out-autonome-airbnb-val-europe</loc>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -324,8 +325,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://conciergerievaldeurope.fr/blog/fideliser-voyageurs-airbnb-val-europe-rebooking/</loc>
+    <loc>https://conciergerievaldeurope.fr/blog/fideliser-voyageurs-airbnb-val-europe-rebooking</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergerievaldeurope.fr/blog/contrat-location-saisonniere-airbnb-val-europe/</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
