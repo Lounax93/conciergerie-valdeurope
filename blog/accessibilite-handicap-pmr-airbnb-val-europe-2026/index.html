@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibilité handicap PMR pour Airbnb à Val d'Europe : guide 2026</title>
+    <meta name="description" content="Normes PMR, équipements accessibles, label Tourisme & Handicap et aides financières — le guide complet pour rendre votre location saisonnière accessible aux voyageurs handicapés à Serris, Chessy et Montévrain.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://conciergerievaldeurope.fr/blog/accessibilite-handicap-pmr-airbnb-val-europe-2026/">
+    <meta property="og:title" content="Accessibilité handicap PMR pour Airbnb à Val d'Europe : guide 2026">
+    <meta property="og:description" content="Normes PMR, équipements accessibles, label Tourisme & Handicap et aides financières — le guide complet pour rendre votre location accessible aux voyageurs handicapés à Serris, Chessy et Montévrain.">
+    <meta property="og:url" content="https://conciergerievaldeurope.fr/blog/accessibilite-handicap-pmr-airbnb-val-europe-2026/">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL1DS9HFSP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CL1DS9HFSP');
+    </script>
+    <style>
+        :root {
+            --white: #F8FAFC;
+            --glacier: #EAF3F8;
+            --navy: #102A43;
+            --navy-d: #0A1C2E;
+            --turquoise: #00A6A6;
+            --turquoise-d: #007F7F;
+            --champagne: #D6B36A;
+            --champagne-d: #B8952E;
+            --border: #CBD5E1;
+            --muted: rgba(16,42,67,0.5);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.75;
+            color: var(--navy);
+            background: var(--white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--navy);
+        }
+
+        h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 800; }
+        h2 { font-size: clamp(1.35rem, 3vw, 1.85rem); font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; }
+        h3 { font-size: clamp(1.1rem, 2.2vw, 1.35rem); font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1.15rem; }
+        a { color: var(--turquoise); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--turquoise-d); }
+        img { max-width: 100%; height: auto; border-radius: 12px; }
+        ul, ol { margin-bottom: 1.15rem; padding-left: 1.5rem; }
+        li { margin-bottom: 0.4rem; }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(248,250,252,0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--navy);
+        }
+        .logo em {
+            font-style: normal;
+            color: var(--turquoise);
+        }
+        .nav-cta {
+            background: var(--navy);
+            color: var(--white) !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: background 0.2s;
+        }
+        .nav-cta:hover { background: var(--navy-d) !important; color: var(--white) !important; }
+
+        /* Nav Hamburger & Overlay */
+        .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px;z-index:501;position:relative;}
+        .nav-hamburger span{display:block;width:24px;height:2.5px;background:var(--navy);border-radius:2px;transition:transform .3s,opacity .3s;}
+        .nav-hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+        .nav-hamburger.active span:nth-child(2){opacity:0;}
+        .nav-hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+        .nav-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:500;background:rgba(16,42,67,0.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:opacity .35s;}
+        .nav-overlay.open{opacity:1;pointer-events:auto;}
+        .nav-overlay a{color:rgba(255,255,255,.8);text-decoration:none;font-size:1.15rem;font-weight:600;transition:color .25s;font-family:'Plus Jakarta Sans',sans-serif;}
+        .nav-overlay a:hover{color:var(--turquoise);}
+        .nav-overlay .overlay-cta{background:var(--turquoise);color:var(--white)!important;padding:12px 28px;border-radius:999px;font-size:.95rem;font-weight:700;}
+        @media(min-width:769px){.nav-overlay{display:none!important;}}
+
+        /* Hero */
+        .hero {
+            margin-top: 56px;
+            padding: 4rem 1.5rem 5rem;
+            background: linear-gradient(135deg, var(--navy) 0%, #0D3B5E 50%, rgba(0,166,166,0.35) 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            text-align: center;
+            color: var(--white);
+        }
+        .hero h1 {
+            color: var(--white);
+            max-width: 780px;
+            margin: 0 auto 1rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 620px;
+            margin: 0 auto 1.5rem;
+            opacity: 0.9;
+        }
+        .hero .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.7rem 1.75rem;
+            border-radius: 999px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-decoration: none !important;
+        }
+        .btn-turquoise {
+            background: var(--turquoise);
+            color: var(--white);
+        }
+        .btn-turquoise:hover { background: var(--turquoise-d); color: var(--white); }
+        .btn-champagne {
+            background: var(--champagne);
+            color: var(--navy);
+        }
+        .btn-champagne:hover { background: var(--champagne-d); color: var(--navy); }
+
+        /* Container */
+        .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Layout */
+        .article-wrapper {
+            display: flex;
+            gap: 2.5rem;
+            max-width: 1160px;
+            margin: -1.5rem auto 2rem;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        .article-content { flex: 1; min-width: 0; }
+        .sidebar { width: 280px; flex-shrink: 0; display: none; }
+        @media (min-width: 992px) { .sidebar { display: block; } }
+
+        /* Sidebar TOC */
+        .toc {
+            background: var(--white);
+            border-radius: 14px;
+            padding: 1.5rem;
+            position: sticky;
+            top: 90px;
+            border-top: 3px solid;
+            border-image: linear-gradient(90deg, var(--turquoise), var(--champagne)) 1;
+            box-shadow: 0 4px 20px rgba(16,42,67,0.08);
+        }
+        .toc h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--navy);
+        }
+        .toc ul { list-style: none; padding: 0; margin: 0; }
+        .toc li { margin-bottom: 0.6rem; }
+        .toc a {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--navy);
+            opacity: 0.7;
+            transition: opacity 0.2s;
+            display: block;
+            padding: 0.25rem 0;
+            border-bottom: 1px solid var(--glacier);
+        }
+        .toc a:hover { opacity: 1; color: var(--turquoise); }
+
+        /* Tables */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(16,42,67,0.08);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+        thead th {
+            background: var(--navy);
+            color: var(--white);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            padding: 0.85rem 1rem;
+            text-align: left;
+        }
+        tbody tr:nth-child(even) { background: var(--glacier); }
+        tbody tr:nth-child(odd) { background: var(--white); }
+        tbody td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Stat highlight */
+        .stat-highlight {
+            background: var(--glacier);
+            border-left: 3px solid var(--turquoise);
+            border-radius: 0 12px 12px 0;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .stat-highlight .stat-number {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--turquoise);
+            display: block;
+        }
+        .stat-highlight .stat-label {
+            font-size: 0.92rem;
+            color: var(--navy);
+            opacity: 0.75;
+        }
+
+        /* CTA blocks */
+        .cta-block {
+            background: linear-gradient(135deg, var(--navy) 0%, #0D3B5E 50%, rgba(0,166,166,0.3) 100%);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            margin: 2.5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--turquoise), var(--champagne));
+        }
+        .cta-block h2, .cta-block h3, .cta-block p {
+            color: var(--white);
+        }
+        .cta-block h2, .cta-block h3 { margin-top: 0; }
+        .cta-block .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem; }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid var(--turquoise);
+            padding: 1rem 0;
+        }
+        .faq-item:first-child { border-top: 1px solid var(--turquoise); }
+        .faq-question {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--navy);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.3rem;
+            color: var(--turquoise);
+            font-weight: 400;
+        }
+        .faq-answer {
+            margin-top: 0.6rem;
+            font-size: 0.92rem;
+            opacity: 0.85;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy-d);
+            color: rgba(248,250,252,0.7);
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.85rem;
+        }
+
+        /* Misc */
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .article-meta span { display: inline-flex; align-items: center; gap: 0.3rem; }
+        .intro-lead {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--navy);
+            border-left: 3px solid var(--turquoise);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Mobile responsive overrides */
+        @media(max-width:768px){
+            nav{padding:0.5rem 1rem!important;}
+            .nav-cta{display:none!important;}
+            .nav-hamburger{display:flex!important;}
+            .hero{padding:3rem 1rem 4rem!important;clip-path:polygon(0 0,100% 0,100% 95%,0 100%)!important;}
+            .hero h1{font-size:clamp(1.4rem,6vw,1.9rem)!important;}
+            .hero p{font-size:0.95rem!important;}
+            .container{padding:0 1rem!important;}
+            .article-wrapper{flex-direction:column!important;gap:1.5rem!important;}
+            .sidebar{display:none!important;}
+            .article-content{width:100%!important;}
+            h2{font-size:clamp(1.15rem,4.5vw,1.5rem)!important;}
+            h3{font-size:clamp(1rem,3.5vw,1.2rem)!important;}
+            p,li{font-size:0.92rem!important;}
+            .cta-block{padding:2rem 1.25rem!important;margin:2rem 0!important;}
+            .btn{padding:0.6rem 1.25rem!important;font-size:0.85rem!important;}
+            .cta-group,.btn-group{flex-direction:column!important;gap:0.75rem!important;}
+            .btn,.btn-turquoise,.btn-champagne{width:100%!important;justify-content:center!important;}
+            .stat-highlight{padding:1rem!important;}
+            .stat-highlight .stat-number{font-size:1.3rem!important;}
+            .table-wrap{overflow-x:auto!important;}
+            table{font-size:0.82rem!important;}
+            thead th,tbody td{padding:0.6rem 0.7rem!important;}
+            .article-meta{gap:0.5rem!important;font-size:0.78rem!important;}
+            .intro-lead{font-size:0.95rem!important;padding-left:0.75rem!important;}
+            .faq-question{font-size:0.92rem!important;}
+            .faq-answer{font-size:0.85rem!important;}
+            .toc{padding:1rem!important;}
+            footer{padding:2rem 1rem!important;}
+        }
+        @media(max-width:480px){
+            .hero h1{font-size:clamp(1.2rem,5vw,1.6rem)!important;}
+            .hero{padding:2.5rem 0.75rem 3.5rem!important;}
+            table{font-size:0.78rem!important;display:block!important;overflow-x:auto!important;white-space:nowrap!important;}
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="https://conciergerievaldeurope.fr" class="logo"><em>Conciergerie</em> Val d'Europe</a>
+    <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Réserver un appel</a>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-overlay">
+        <a href="/">Accueil</a>
+        <a href="/blog">Blog</a>
+        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="overlay-cta">Réserver un appel</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Accessibilité handicap et PMR pour votre Airbnb à Val d'Europe</h1>
+    <p>Normes, équipements adaptés, label Tourisme & Handicap et subventions — le guide complet pour ouvrir votre location saisonnière aux voyageurs à mobilité réduite à Serris, Chessy et Montévrain.</p>
+    <div class="cta-group">
+        <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn-turquoise" target="_blank" rel="noopener">📊 Estimer mes revenus</a>
+        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-champagne" target="_blank" rel="noopener">📅 Appel découverte offert</a>
+    </div>
+</section>
+
+<!-- Article -->
+<div class="article-wrapper">
+    <article class="article-content">
+
+        <div class="container" style="padding:0;">
+            <div class="article-meta">
+                <span>📅 Mis à jour : juillet 2026</span>
+                <span>⏱ Temps de lecture : 8 min</span>
+                <span>🏠 Conciergerie Val d'Europe</span>
+            </div>
+
+            <p class="intro-lead">
+                En France, <strong>12 millions de personnes</strong> sont concernées par le handicap, dont 3,5 millions à mobilité réduite. Pourtant, moins de 5 % des locations saisonnières à Val d'Europe sont réellement accessibles. Un logement PMR-friendly, c'est un segment de clientèle sous-exploité, une meilleure note et une préparation aux futures obligations réglementaires. Voici comment rendre votre Airbnb accessible sans vous ruiner.
+            </p>
+        </div>
+
+        <!-- 1. -->
+        <div class="container" style="padding:0;">
+            <h2 id="section-1">1. Pourquoi investir dans l'accessibilité à Val d'Europe ?</h2>
+            <p>Le marché des voyageurs en situation de handicap ou à mobilité réduite (PMR) est considérable et en croissance : vieillissement de la population, séjours en famille multi-générationnelle, et prise de conscience sociétale. À Val d'Europe, où <strong>Disneyland Paris</strong> propose des services d'accueil PMR de plus en plus développés (pass Priority pour les personnes handicapées, prêt de fauteuils roulants), la demande de logements accessibles à proximité du parc explose.</p>
+            <p>Concrètement, un Airbnb accessible PMR à Serris, Chessy ou Montévrain bénéficie de plusieurs avantages :</p>
+            <ul>
+                <li><strong>Moins de concurrence</strong> : l'offre de logements PMR-compatibles dans le secteur est infime par rapport à la demande.</li>
+                <li><strong>Meilleure notation</strong> : les voyageurs PMR sont particulièrement reconnaissants d'un logement adapté et le font savoir dans les avis.</li>
+                <li><strong>Revenus complémentaires</strong> : les familles avec un proche handicapé réservent plus longtemps (séjours de 5 à 10 nuits) et reviennent plus souvent.</li>
+                <li><strong>Préparation réglementaire</strong> : la loi Élan et les obligations d'accessibilité des ERP influencent progressivement le marché locatif touristique.</li>
+            </ul>
+
+            <div class="stat-highlight">
+                <span class="stat-number">12 millions</span>
+                <span class="stat-label">de personnes concernées par le handicap en France — dont 85 % voyagent au moins une fois par an. Un réservoir de clients massif pour votre Airbnb à Val d'Europe.</span>
+            </div>
+        </div>
+
+        <!-- 2. -->
+        <div class="container" style="padding:0;">
+            <h2 id="section-2">2. Les équipements essentiels pour un logement PMR</h2>
+            <p>Inutile de tout transformer du jour au lendemain. Voici les aménagements qui font la différence, classés par priorité et budget :</p>
+
+            <h3>2.1. Accès de plain-pied (priorité n°1)</h3>
+            <p>Un logement de plain-pied (rez-de-chaussée avec ascenseur) est le critère numéro un. Si votre bien est en étage, vérifiez que l'ascenseur est suffisamment large (porte ≥ 80 cm, cabine ≥ 110 × 140 cm). Une rampe d'accès amovible (100 à 400 €) peut suffire pour une marche de 1 à 2 marches à l'entrée.</p>
+
+            <h3>2.2. Portes larges et circulation</h3>
+            <p>Les portes doivent mesurer au moins <strong>80 cm de large</strong> pour laisser passer un fauteuil roulant standard (largeur 65-70 cm). Dans les pièces de vie, prévoyez un espace de circulation d'au moins 150 cm de diamètre pour permettre les demi-tours. Un couloir doit faire au moins 120 cm de large.</p>
+
+            <h3>2.3. Salle de bain adaptée</h3>
+            <p>C'est la pièce la plus importante. Les aménagements clés :</p>
+            <ul>
+                <li><strong>Douche de plain-pied</strong> (pas de receveur surélevé) — prévoir un siège de douche mural ou un tabouret étanche (50-150 €).</li>
+                <li><strong>Barres d'appui</strong> à proximité des toilettes et dans la douche (30-80 € l'unité, pose facile).</li>
+                <li><strong>Mitigeur thermostatique</strong> pour éviter les brûlures (80-150 €).</li>
+                <li><strong>Rehausseur de toilettes</strong> ou WC suspendu à la bonne hauteur (45-48 cm).</li>
+                <li><strong>Lavabo suspendu</strong> permettant le passage des genoux d'un fauteuil roulant.</li>
+            </ul>
+
+            <h3>2.4. Chambre et literie</h3>
+            <p>Un lit à la bonne hauteur (55-60 cm du sol pour faciliter les transferts fauteuil/lit) et un espace de circulation d'au moins 80 cm de chaque côté du lit. Un lit médicalisé n'est pas nécessaire — une hauteur standard suffit dans 80 % des cas.</p>
+
+            <h3>2.5. Équipements complémentaires</h3>
+            <p>Pour quelques dizaines d'euros, vous pouvez ajouter : des poignées de tirage sur les portes (plutôt que des boutons ronds difficiles à saisir), des interrupteurs et prises à hauteur accessible (40-90 cm du sol), un éclairage LED automatique dans les couloirs et un téléphone ou enceinte connectée pour les voyageurs malvoyants.</p>
+        </div>
+
+        <!-- 3. -->
+        <div class="container" style="padding:0;">
+            <h2 id="section-3">3. Budget et retour sur investissement</h2>
+            <p>Contrairement aux idées reçues, rendre un logement accessible ne nécessite pas un budget colossal, surtout si l'on adapte progressivement :</p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aménagement</th>
+                            <th>Budget estimé</th>
+                            <th>Difficulté</th>
+                            <th>Impact client</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Barres d'appui (x3)</td>
+                            <td>90-240 €</td>
+                            <td>⭐⭐ (facile)</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Douche plain-pied</td>
+                            <td>800-2 500 €</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Rampe d'accès amovible</td>
+                            <td>100-400 €</td>
+                            <td>⭐ (très facile)</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Rehausseur WC + siège douche</td>
+                            <td>100-200 €</td>
+                            <td>⭐ (très facile)</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Mitigeur thermostatique</td>
+                            <td>80-150 €</td>
+                            <td>⭐⭐⭐</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Éclairage LED + détecteurs</td>
+                            <td>150-400 €</td>
+                            <td>⭐⭐</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Élargissement porte (1 porte)</td>
+                            <td>300-800 €</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size:0.85rem;color:var(--muted);">* Budgets estimés pour des travaux standards en Seine-et-Marne (2026). Les prix peuvent varier selon la configuration du logement et les artisans.</p>
+
+            <p>En estimant <strong>+15 à 25 % de réservations supplémentaires</strong> grâce à l'accessibilité (clientèle PMR + familles multi-générationnelles), le retour sur investissement des aménagements de base (barres, rampe, rehausseur) se fait en <strong>2 à 4 mois</strong>. Pour les travaux plus lourds (douche plain-pied, élargissement de porte), comptez 8 à 18 mois de ROI.</p>
+        </div>
+
+        <!-- 4. -->
+        <div class="container" style="padding:0;">
+            <h2 id="section-4">4. Label Tourisme & Handicap et aides financières</h2>
+
+            <h3>4.1. Le label Tourisme & Handicap</h3>
+            <p>Ce label national, délivré par Atout France, garantit que votre hébergement est accessible de façon autonome. Il couvre quatre familles de handicap : moteur, visuel, auditif et mental. Pour un Airbnb à Val d'Europe, l'obtention de ce label est un <strong>argument marketing puissant</strong> — vous apparaissez dans les annuaires spécialisés et les voyagistes adaptés. Le coût de la démarche est d'environ 600 à 1 200 € (audit + visite de classement), renouvelable tous les 5 ans.</p>
+
+            <h3>4.2. Aides financières disponibles</h3>
+            <p>Plusieurs dispositifs peuvent financer vos travaux d'accessibilité :</p>
+            <ul>
+                <li><strong>MaPrimeRénov' Adapt</strong> : jusqu'à 15 000 € pour les travaux d'accessibilité dans les logements individuels (résidence principale — vérifiez les conditions pour un bien locatif).</li>
+                <li><strong>CEE (Certificats d'Économie d'Énergie)</strong> : certaines primes CEE financent des travaux d'adaptation (douche plain-pied, éclairage) coupés à des objectifs d'économies d'énergie.</li>
+                <li><strong>Subventions locales</strong> : Val d'Europe Agglo et les communes (Serris, Chessy) proposent parfois des aides ponctuelles pour l'accessibilité des logements touristiques.</li>
+                <li><strong>Réduction d'impôt</strong> : sous certaines conditions, les travaux d'accessibilité sont déductibles des revenus fonciers en LMNP au réel.</li>
+            </ul>
+            <p>Pour plus d'informations sur les dispositifs fiscaux applicables à votre location saisonnière, consultez notre <a href="/blog/lmnp-val-europe-fiscalite-optimisation">guide fiscal LMNP à Val d'Europe</a>.</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="container" style="padding:0;">
+            <div class="cta-block">
+                <h3>Vous voulez estimer vos revenus avec un logement accessible ?</h3>
+                <p>Notre simulateur gratuit intègre le supplément de demande généré par l'accessibilité PMR à Val d'Europe.</p>
+                <div class="btn-group">
+                    <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn-turquoise" target="_blank" rel="noopener">📊 Lancer le simulateur</a>
+                    <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-champagne" target="_blank" rel="noopener">📅 Réserver un appel</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. -->
+        <div class="container" style="padding:0;">
+            <h2 id="section-5">5. Comment valoriser votre accessibilité sur Airbnb</h2>
+            <p>Une fois vos aménagements réalisés, encore faut-il que les voyageurs les voient ! Voici comment maximiser l'impact de votre démarche :</p>
+
+            <h3>5.1. Mentionnez l'accessibilité dans le titre et la description</h3>
+            <p>Ajoutez des mots-clés comme <strong>« accessible PMR »</strong>, <strong>« de plain-pied »</strong> ou <strong>« douche adaptée »</strong> dans le titre de votre annonce Airbnb. Dans la description, détaillez précisément les équipements : largeur des portes, hauteur du lit, présence de barres d'appui, type de douche.</p>
+
+            <h3>5.2. Photos ciblées</h3>
+            <p>Prenez des photos montrant explicitement les aménagements : la douche de plain-pied avec le siège, les barres d'appui, la rampe d'accès, la largeur des portes (avec un fauteuil roulant si possible). Les voyageurs PMR ont besoin de <strong>certitudes visuelles</strong> avant de réserver.</p>
+
+            <h3>5.3. Activez le filtre « Accessible » Airbnb</h3>
+            <p>Airbnb permet de taguer votre logement comme « accessible aux personnes à mobilité réduite ». Cochez cette case dans les paramètres de votre annonce pour apparaître dans les recherches filtrées des voyageurs PMR.</p>
+
+            <h3>5.4. Honorez les réservations PMR en priorité</h3>
+            <p>Si vous pratiquez la <a href="/blog/tarification-dynamique-prix-airbnb-val-europe-saison-2026">tarification dynamique</a>, évitez d'augmenter vos prix de manière prohibitive pour les réservations longue durée (5+ nuits), typiques des séjours PMR. Un voyageur fidélisé qui revient chaque année vaut plusieurs réservations ponctuelles !</p>
+
+            <p>Pour maximiser la visibilité de votre annonce, n'hésitez pas à consulter notre <a href="/blog/optimiser-annonce-airbnb-val-europe-titre-description-seo-2026">guide d'optimisation d'annonce Airbnb</a>.</p>
+        </div>
+
+        <!-- 6. -->
+        <div class="container" style="padding:0;">
+            <h2 id="section-6">6. Accessibilité et réglementation : ce qui vous attend</h2>
+            <p>Même si la réglementation française n'impose pas encore l'accessibilité totale pour les locations meublées de tourisme (hors ERP), plusieurs signaux indiquent une évolution à venir :</p>
+            <ul>
+                <li><strong>Loi Élan (2018)</strong> : elle renforce les obligations d'accessibilité dans les logements neufs et les parties communes des copropriétés. Tout bien récent (après 2020) est théoriquement déjà aux normes.</li>
+                <li><strong>Schéma régional du tourisme Île-de-France</strong> : il vise à doubler le nombre d'hébergements touristiques labellisés « Tourisme & Handicap » d'ici 2030.</li>
+                <li><strong>Règlementation européenne</strong> : l'Acte législatif européen sur l'accessibilité (2025) pourrait étendre certaines obligations aux plateformes de réservation comme Airbnb.</li>
+            </ul>
+            <p>Investir dans l'accessibilité aujourd'hui, c'est anticiper les obligations de demain tout en captant un marché porteur dès maintenant.</p>
+        </div>
+
+        <!-- CTA 2 -->
+        <div class="container" style="padding:0;">
+            <div class="cta-block">
+                <h3>Prêt à rendre votre Airbnb accessible et à booster vos revenus ?</h3>
+                <p>Notre équipe vous accompagne dans l'évaluation des travaux d'accessibilité et l'optimisation de votre annonce pour capter la clientèle PMR.</p>
+                <div class="btn-group">
+                    <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn-turquoise" target="_blank" rel="noopener">📊 Simuler mes revenus</a>
+                    <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-champagne" target="_blank" rel="noopener">📅 Appel découverte</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="container" style="padding:0;">
+            <h2 id="section-7">7. FAQ – Accessibilité handicap PMR Airbnb à Val d'Europe</h2>
+
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Quels sont les aménagements PMR obligatoires pour un Airbnb à Val d'Europe ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Il n'y a pas d'obligation légique spécifique pour les locations meublées de tourisme (hors ERP). Cependant, la loi Élan impose des normes d'accessibilité pour les logements neufs construits après 2020. Pour un bien existant, les aménagements recommandés sont : accès de plain-pied ou rampe, portes d'au moins 80 cm de large, douche de plain-pied, barres d'appui et espace de circulation suffisant dans les pièces principales."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Combien coûte la mise aux normes PMR d'un Airbnb à Val d'Europe ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Le budget dépend de l'état initial du logement. Pour les aménagements de base (barres d'appui, rampe, rehausseur WC, siège de douche), comptez 300 à 800 €. Pour des travaux plus lourds (douche plain-pied, élargissement de portes), prévoyez 1 500 à 5 000 €. Le retour sur investissement est rapide grâce à la demande croissante de logements accessibles à proximité de Disneyland Paris."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Comment savoir si mon logement à Serris, Chessy ou Montévrain est adapté aux PMR ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Un diagnostic d'accessibilité réalisé par un ergothérapeute ou un architecte spécialisé coûte entre 500 et 1 000 € et permet d'évaluer précisément les travaux nécessaires. Des solutions gratuites existent : le guide « Pour un logement accessible à tous » de l'ANAH ou le simulateur en ligne AccessiMetre. Pour un premier niveau d'évaluation, vérifiez les trois points essentiels : accès de plain-pied, largeur des portes, et salle de bain au rez-de-chaussée."
+                        }
+                    }
+                ]
+            }
+            </script>
+
+            <div class="faq-item">
+                <div class="faq-question">Quels sont les aménagements PMR obligatoires pour un Airbnb à Val d'Europe ?</div>
+                <div class="faq-answer">Il n'y a pas d'obligation légale spécifique pour les locations meublées de tourisme (hors ERP). Cependant, la loi Élan impose des normes d'accessibilité pour les logements neufs construits après 2020. Pour un bien existant, les aménagements recommandés sont : <strong>accès de plain-pied ou rampe</strong>, portes d'au moins 80 cm de large, douche de plain-pied, barres d'appui et espace de circulation suffisant.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Combien coûte la mise aux normes PMR d'un Airbnb à Val d'Europe ?</div>
+                <div class="faq-answer">Pour les aménagements de base (barres d'appui, rampe, rehausseur WC, siège de douche), comptez <strong>300 à 800 €</strong>. Pour des travaux plus lourds (douche plain-pied, élargissement de portes), prévoyez <strong>1 500 à 5 000 €</strong>. Le retour sur investissement est rapide grâce à la demande croissante de logements accessibles à proximité de Disneyland Paris.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Comment savoir si mon logement à Serris, Chessy ou Montévrain est adapté aux PMR ?</div>
+                <div class="faq-answer">Un diagnostic d'accessibilité par un ergothérapeute ou architecte spécialisé coûte <strong>500 à 1 000 €</strong>. Des solutions gratuites existent : le guide « Pour un logement accessible à tous » de l'ANAH ou le simulateur AccessiMetre. Pour une auto-évaluation rapide, vérifiez les trois points : <strong>accès de plain-pied, largeur des portes, salle de bain au rez-de-chaussée</strong>.</div>
+            </div>
+
+        </div>
+
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="toc">
+            <h3>📑 Sommaire</h3>
+            <ul>
+                <li><a href="#section-1">1. Pourquoi investir</a></li>
+                <li><a href="#section-2">2. Équipements essentiels</a></li>
+                <li><a href="#section-3">3. Budget et ROI</a></li>
+                <li><a href="#section-4">4. Label et aides</a></li>
+                <li><a href="#section-5">5. Valoriser l'accessibilité</a></li>
+                <li><a href="#section-6">6. Réglementation</a></li>
+                <li><a href="#section-7">7. FAQ</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 <strong>Conciergerie Val d'Europe</strong> — Une offre Hostopia. Tous droits réservés.</p>
+    <p style="margin-top:0.5rem;opacity:0.6;">Location saisonnière &bull; Gestion locative &bull; Val d'Europe &bull; Disneyland Paris</p>
+</footer>
+
+<script>
+(function(){
+    var h = document.querySelector('.nav-hamburger'), o = document.querySelector('.nav-overlay');
+    if(h&&o){h.addEventListener('click',function(){h.classList.toggle('active');o.classList.toggle('open');});
+    o.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('active');o.classList.remove('open');});});}
+})();
+</script>
+
+</body>
+</html>
