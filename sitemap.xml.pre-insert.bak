@@ -642,10 +642,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-    <url>
-        <loc>https://conciergerievaldeurope.fr/blog/depot-garantie-caution-airbnb-val-europe-2026</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <lastmod>2026-07-30</lastmod>
-    </url>
 </urlset>
