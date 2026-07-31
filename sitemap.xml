@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://conciergerievaldeurope.fr/blog</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -651,6 +651,12 @@
   <url>
     <loc>https://conciergerievaldeurope.fr/blog/literie-linge-de-lit-serviettes-airbnb-val-europe-2026</loc>
     <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergerievaldeurope.fr/blog/tarification-dynamique-prix-airbnb-val-europe-2026</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
