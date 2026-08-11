@@ -786,4 +786,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+    <url>
+        <loc>https://conciergerievaldeurope.fr/blog/loi-le-meur-2026-impact-airbnb-val-europe</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2026-08-11</lastmod>
+    </url>
 </urlset>
